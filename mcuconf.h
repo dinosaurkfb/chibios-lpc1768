@@ -66,11 +66,14 @@
  * SERIAL driver system settings.
  */
 #define LPC17xx_SERIAL_USE_UART0            TRUE
-#define LPC17xx_SERIAL_USE_UART1            FALSE
-#define LPC17xx_SERIAL_USE_UART2            FALSE
-#define LPC17xx_SERIAL_USE_UART3            FALSE
+#define LPC17xx_SERIAL_USE_UART1            TRUE
+#define LPC17xx_SERIAL_USE_UART2            TRUE
+#define LPC17xx_SERIAL_USE_UART3            TRUE
 #define LPC17xx_SERIAL_FIFO_PRELOAD         16
 #define LPC17xx_SERIAL_UART0CLKDIV          1
+#define LPC17xx_SERIAL_UART1CLKDIV          1
+#define LPC17xx_SERIAL_UART2CLKDIV          1
+#define LPC17xx_SERIAL_UART3CLKDIV          1
 #define LPC17xx_SERIAL_UART0_IRQ_PRIORITY   3
 #define LPC17xx_SERIAL_UART1_IRQ_PRIORITY   3
 #define LPC17xx_SERIAL_UART2_IRQ_PRIORITY   3

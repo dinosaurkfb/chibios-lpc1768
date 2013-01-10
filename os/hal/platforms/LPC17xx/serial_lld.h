@@ -217,26 +217,27 @@
 /**
  * @brief   UART0 clock.
  */
+//SystemCoreClock = pll/div 
 #define  LPC17xx_SERIAL_UART0_PCLK                                          \
-  (LPC17xx_MAINCLK / LPC17xx_SERIAL_UART0CLKDIV)
+  (SystemCoreClock / LPC17xx_SERIAL_UART0CLKDIV )
 
 /**
  * @brief   UART1 clock.
  */
 #define  LPC17xx_SERIAL_UART1_PCLK                                          \
-  (LPC17xx_MAINCLK / LPC17xx_SERIAL_UART1CLKDIV)
+  (SystemCoreClock / LPC17xx_SERIAL_UART1CLKDIV)
 
 /**
  * @brief   UART2 clock.
  */
 #define  LPC17xx_SERIAL_UART2_PCLK                                          \
-  (LPC17xx_MAINCLK / LPC17xx_SERIAL_UART2CLKDIV)
+  (SystemCoreClock / LPC17xx_SERIAL_UART2CLKDIV)
 
 /**
  * @brief   UART3 clock.
  */
 #define  LPC17xx_SERIAL_UART3_PCLK                                          \
-  (LPC17xx_MAINCLK / LPC17xx_SERIAL_UART3CLKDIV)
+  (SystemCoreClock / LPC17xx_SERIAL_UART3CLKDIV)
 
 /*===========================================================================*/
 /* Driver data structures and types.                                         */

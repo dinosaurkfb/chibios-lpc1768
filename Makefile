@@ -210,3 +210,5 @@ openocd:
 tags: 
 	ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . ../../../os
 
+flash:
+	lpc21isp  build/${PROJECT}.hex /dev/ttyUSB1 38400 12000

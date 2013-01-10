@@ -79,6 +79,7 @@ void hal_lld_init(void) {
  */
 void LPC17xx_clock_init(void) {
     SystemInit();
+    SystemCoreClockUpdate();
 #if 0
   unsigned i;
 

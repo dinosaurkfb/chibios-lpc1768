@@ -29,8 +29,8 @@
 /*
  * Board identifiers.
  */
-#define BOARD_LPC1756_DK_A
-#define BOARD_NAME "LPC1756-DK-A"
+#define BOARD_LPC1768
+#define BOARD_NAME "LPC1768"
 
 /*
  * Board frequencies.
@@ -52,8 +52,8 @@
 /*
  * GPIO 2 initial setup.
  */
-#define VAL_GPIO2DIR            0x00000000
-#define VAL_GPIO2DATA           (1<<GPIO2_SW)
+#define VAL_GPIO2DIR            0x000000ff
+#define VAL_GPIO2DATA           0x000000aa
 
 /*
  * GPIO 3 initial setup.
@@ -72,7 +72,7 @@
  */
 #define GPIO1_LED               18
 
-#define GPIO2_SW                10
+#define GPIO2_SW                4
 
 
 #if !defined(_FROM_ASM_)

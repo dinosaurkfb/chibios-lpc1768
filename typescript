@@ -1,0 +1,2514 @@
+Script started on 2012年12月23日 星期日 18时26分07秒
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ openocd
+Open On-Chip Debugger 0.5.0 (2011-12-03-08:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.berlios.de/doc/doxygen/bugs.html
+Can't find openocd.cfg
+in procedure 'script'
+Error: Debug Adapter has to be specified, see "interface" command
+in procedure 'init'
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ openocd he[Kelp
+Open On-Chip Debugger 0.5.0 (2011-12-03-08:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.berlios.de/doc/doxygen/bugs.html
+Can't find openocd.cfg
+in procedure 'script'
+Error: Debug Adapter has to be specified, see "interface" command
+in procedure 'init'
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ openocd help[K[K[K[K--help
+Open On-Chip Debugger 0.5.0 (2011-12-03-08:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.berlios.de/doc/doxygen/bugs.html
+Open On-Chip Debugger
+Licensed under GNU GPL v2
+--help       | -h	display this help
+--version    | -v	display OpenOCD version
+--file       | -f	use configuration file <name>
+--search     | -s	dir to search for config files and scripts
+--debug      | -d	set debug level <0-3>
+--log_output | -l	redirect log output to file <name>
+--command    | -c	run <command>
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ openocd --help[K[K[K
+Open On-Chip Debugger 0.5.0 (2011-12-03-08:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.berlios.de/doc/doxygen/bugs.html
+Open On-Chip Debugger
+Licensed under GNU GPL v2
+--help       | -h	display this help
+--version    | -v	display OpenOCD version
+--file       | -f	use configuration file <name>
+--search     | -s	dir to search for config files and scripts
+--debug      | -d	set debug level <0-3>
+--log_output | -l	redirect log output to file <name>
+--command    | -c	run <command>
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ openocd --h[C[1Ph
+Open On-Chip Debugger 0.5.0 (2011-12-03-08:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.berlios.de/doc/doxygen/bugs.html
+Open On-Chip Debugger
+Licensed under GNU GPL v2
+--help       | -h	display this help
+--version    | -v	display OpenOCD version
+--file       | -f	use configuration file <name>
+--search     | -s	dir to search for config files and scripts
+--debug      | -d	set debug level <0-3>
+--log_output | -l	redirect log output to file <name>
+--command    | -c	run <command>
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ find openocd
+find: `openocd': 没有那个文件或目录
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ find openocd[C[1P openocd[1P openocd[1P openocd[1P openocdw openocdh openocde openocdr openocde openocdi openocds openocd
+openocd: /usr/bin/openocd /usr/lib/openocd /usr/bin/X11/openocd /usr/share/openocd /usr/share/man/man1/openocd.1.gz
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ cd yu[K[Kus[K[K/use[Kr/bin/open[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kwhereis openocd[3Pfind[C[C[C[C[C[C[C[C[3@whereis[C[C[C[C[C[C[C[C[Kcd u[K.[K/usr/bin/
+]0;mc@Mc: /usr/binmc@Mc:/usr/bin$ ls
+[0m[01;32m[[0m
+[01;36m2to3[0m
+[01;32m2to3-2.7[0m
+[01;32m411toppm[0m
+[01;32m7z[0m
+[01;32m7za[0m
+[01;32ma2p[0m
+[01;32maa-easyprof[0m
+[01;36maclocal[0m
+[01;32maclocal-1.11[0m
+[01;32maconnect[0m
+[01;32macpi_fakekey[0m
+[01;32macpi_listen[0m
+[01;32macyclic[0m
+[01;32madd-apt-repository[0m
+[01;32maddpart[0m
+[01;32maddr2line[0m
+[01;32mafm2pl[0m
+[01;32mafm2tfm[0m
+[01;32malacarte[0m
+[01;32maleph[0m
+[01;32mallcm[0m
+[01;36mallec[0m
+[01;32mallneeded[0m
+[01;32malsaloop[0m
+[01;32malsamixer[0m
+[01;32malsaucm[0m
+[01;36mamdcccle[0m
+[01;36mamdconfig[0m
+[01;36mamdnotifyui[0m
+[01;36mamdupdaterandrconfig[0m
+[01;36mamdxdg-su[0m
+[01;32mamidi[0m
+[01;32mamixer[0m
+[01;32mamuFormat.sh[0m
+[01;32manimate[0m
+[01;32manytopnm[0m
+[01;32maot-compile[0m
+[01;32mapg[0m
+[01;32mapgbfm[0m
+[01;32maplay[0m
+[01;32maplaymidi[0m
+[01;32mapport-bug[0m
+[01;32mapport-cli[0m
+[01;36mapport-collect[0m
+[01;32mapport-unpack[0m
+[01;32mappres[0m
+[01;36mapropos[0m
+[01;36mapt-add-repository[0m
+[01;32mapt-cache[0m
+[01;32mapt-cdrom[0m
+[01;32mapt-config[0m
+[01;32maptdcon[0m
+[01;32mapt-extracttemplates[0m
+[01;32mapt-ftparchive[0m
+[01;32mapt-get[0m
+[01;32mapt-internal-solver[0m
+[01;36maptitude[0m
+[01;32maptitude-create-state-bundle[0m
+[01;32maptitude-curses[0m
+[01;32maptitude-run-state-bundle[0m
+[01;32mapt-key[0m
+[01;32mapt-mark[0m
+[01;32mapt-sortpkgs[0m
+[01;32mapturl[0m
+[01;32mapturl-gtk[0m
+[01;32mar[0m
+[01;32march[0m
+[01;36marecord[0m
+[01;32marecordmidi[0m
+[01;32marm2hpdl[0m
+[37;41marping[0m
+[01;32mas[0m
+[01;32masciitopgm[0m
+[01;32maseqdump[0m
+[01;32maseqnet[0m
+[01;32maspell[0m
+[01;32maspell-import[0m
+[37;41mat[0m
+[01;36maticonfig[0m
+[01;36matieventsd[0m
+[01;36matiodcli[0m
+[01;36matiode[0m
+[01;32matktopbm[0m
+[01;32matobm[0m
+[01;36matq[0m
+[01;36matrm[0m
+[01;32mautoconf[0m
+[01;32mautoconf2.64[0m
+[01;32mautogen[0m
+[01;32mautoheader[0m
+[01;32mautoheader2.64[0m
+[01;32mautom4te[0m
+[01;32mautom4te2.64[0m
+[01;36mautomake[0m
+[01;32mautomake-1.11[0m
+[01;32mautoopts-config[0m
+[01;32mautoreconf[0m
+[01;32mautoreconf2.64[0m
+[01;32mautoscan[0m
+[01;32mautoscan2.64[0m
+[01;32mautoupdate[0m
+[01;32mautoupdate2.64[0m
+[01;32mavahi-browse[0m
+[01;36mavahi-browse-domains[0m
+[01;32mavahi-publish[0m
+[01;36mavahi-publish-address[0m
+[01;36mavahi-publish-service[0m
+[01;32mavahi-resolve[0m
+[01;36mavahi-resolve-address[0m
+[01;36mavahi-resolve-host-name[0m
+[01;32mavahi-set-host-name[0m
+[01;36mawk[0m
+[01;32maxi-cache[0m
+[01;32mbaobab[0m
+[01;32mbase64[0m
+[01;32mbasename[0m
+[01;32mbashbug[0m
+[01;32mbatch[0m
+[01;32mbc[0m
+[01;32mbcomps[0m
+[01;32mbdftopcf[0m
+[01;32mbdftruncate[0m
+[01;36mbf_compact[0m
+[01;32mbf_compact-bdb[0m
+[01;36mbf_copy[0m
+[01;32mbf_copy-bdb[0m
+[01;36mbf_tar[0m
+[01;32mbf_tar-bdb[0m
+[01;36mbibtex[0m
+[01;32mbibtex8[0m
+[01;32mbibtex.original[0m
+[01;32mbioradtopgm[0m
+[01;32mbison[0m
+[01;32mbison.yacc[0m
+[01;32mbitmap[0m
+[01;32mbluetooth-agent[0m
+[01;32mbluetooth-applet[0m
+[01;32mbluetooth-sendto[0m
+[01;32mbluetooth-wizard[0m
+[01;32mbluez-simple-agent[0m
+[01;32mbluez-simple-service[0m
+[01;32mbluez-test-adapter[0m
+[01;32mbluez-test-audio[0m
+[01;32mbluez-test-device[0m
+[01;32mbluez-test-discovery[0m
+[01;32mbluez-test-input[0m
+[01;32mbluez-test-manager[0m
+[01;32mbluez-test-network[0m
+[01;32mbluez-test-serial[0m
+[01;32mbluez-test-service[0m
+[01;32mbluez-test-telephony[0m
+[01;32mbmptopnm[0m
+[01;36mbmptoppm[0m
+[01;32mbmtoa[0m
+[01;36mbogofilter[0m
+[01;32mbogofilter-bdb[0m
+[01;36mbogolexer[0m
+[01;32mbogolexer-bdb[0m
+[01;36mbogotune[0m
+[01;32mbogotune-bdb[0m
+[01;36mbogoupgrade[0m
+[01;32mbogoupgrade-bdb[0m
+[01;36mbogoutil[0m
+[01;32mbogoutil-bdb[0m
+[01;32mbrasero[0m
+[01;32mbrushtopbm[0m
+[01;32mbsd-from[0m
+[30;43mbsd-write[0m
+[01;32mbtcflash[0m
+[01;32mbyobu[0m
+[01;32mbyobu-config[0m
+[01;32mbyobu-ctrl-a[0m
+[01;32mbyobu-disable[0m
+[01;32mbyobu-enable[0m
+[01;32mbyobu-export[0m
+[01;32mbyobu-janitor[0m
+[01;32mbyobu-launch[0m
+[01;32mbyobu-launcher[0m
+[01;32mbyobu-launcher-install[0m
+[01;32mbyobu-launcher-uninstall[0m
+[01;32mbyobu-layout[0m
+[01;32mbyobu-quiet[0m
+[01;32mbyobu-reconnect-sockets[0m
+[01;36mbyobu-screen[0m
+[01;32mbyobu-select-backend[0m
+[01;32mbyobu-select-profile[0m
+[01;32mbyobu-select-session[0m
+[01;32mbyobu-shell[0m
+[01;32mbyobu-silent[0m
+[01;32mbyobu-status[0m
+[01;32mbyobu-status-detail[0m
+[01;36mbyobu-tmux[0m
+[01;36mc++[0m
+[01;32mc2ph[0m
+[01;36mc89[0m
+[01;32mc89-gcc[0m
+[01;36mc99[0m
+[01;32mc99-gcc[0m
+[01;36mcal[0m
+[01;32mcalendar[0m
+[01;32mcalibrate_ppa[0m
+[01;32mcanberra-gtk-play[0m
+[01;32mcancel[0m
+[01;36mcaptoinfo[0m
+[01;32mcatchsegv[0m
+[01;32mcatman[0m
+[01;32mcautious-launcher[0m
+[01;36mcc[0m
+[01;32mccomps[0m
+[01;32mcd-create-profile[0m
+[01;32mcd-fix-profile[0m
+[01;32mcdparanoia[0m
+[01;36mcdrecord[0m
+[01;32mc++filt[0m
+[01;36mchacl[0m
+[30;43mchage[0m
+[01;32mchardet[0m
+[01;36mcharmap[0m
+[01;32mchattr[0m
+[01;32mchcon[0m
+[01;32mcheckbox-gtk[0m
+[01;32mcheckbox-qt[0m
+[01;32mcheck-language-support[0m
+[01;32mchecksctp[0m
+[37;41mchfn[0m
+[01;32mchkdupexe[0m
+[01;32mchmsee[0m
+[01;32mchrpath[0m
+[01;32mchrt[0m
+[37;41mchsh[0m
+[01;32mciptool[0m
+[01;36mcirco[0m
+[01;32mckbcomp[0m
+[01;32mck-history[0m
+[01;32mck-launch-session[0m
+[01;32mck-list-sessions[0m
+[01;32mcksum[0m
+[01;32mclear[0m
+[01;32mclear_console[0m
+[01;36mcli[0m
+[01;36mcli-gacutil[0m
+[01;36mclinfo[0m
+[01;32mcmp[0m
+[01;32mcmuwmtopbm[0m
+[01;32mcodepage[0m
+[01;32mcol[0m
+[01;32mcolcrt[0m
+[01;32mcolormgr[0m
+[01;32mcolrm[0m
+[01;32mcolumn[0m
+[01;32mcolumns[0m
+[01;36mcombinediff[0m
+[01;32mcomm[0m
+[01;32mcommand2foo2lava-pjl[0m
+[01;32mcompare[0m
+[01;32mcompiz[0m
+[01;32mcompiz-decorator[0m
+[01;36mcompose[0m
+[01;32mcomposite[0m
+[01;32mconfig_data[0m
+[01;32mconjure[0m
+[01;32mconvert[0m
+[01;32mcorelist[0m
+[01;32mcouchdb[0m
+[01;32mcouchdb-dump[0m
+[01;32mcouchdb-load[0m
+[01;32mcouchdb-replicate[0m
+[01;32mcouchjs[0m
+[01;32mcouchpy[0m
+[01;32mcpan[0m
+[01;32mcpan2dist[0m
+[01;32mcpanp[0m
+[01;32mcpanp-run-perl[0m
+[01;36mcpp[0m
+[01;32mcpp-4.4[0m
+[01;32mcpp-4.6[0m
+[01;32mcpufreq-selector[0m
+[01;32mc_rehash[0m
+[30;43mcrontab[0m
+[01;32mcsplit[0m
+[01;32mctangle[0m
+[01;32mctie[0m
+[01;36mctstat[0m
+[01;32mcups-calibrate[0m
+[01;32mcupstestdsc[0m
+[01;32mcupstestppd[0m
+[01;32mcut[0m
+[01;32mcvs[0m
+[01;32mcvs-switchroot[0m
+[01;32mcvt[0m
+[01;32mcweave[0m
+[01;32mdbus-launch[0m
+[01;32mdbus-monitor[0m
+[01;32mdbus-send[0m
+[01;32mdc[0m
+[01;32mdccleancrw[0m
+[01;32mdcfujigreen[0m
+[01;32mdcfujiturn[0m
+[01;32mdcfujiturn16[0m
+[01;32mdcparse[0m
+[01;32mdcraw[0m
+[01;32mdeallocvt[0m
+[01;32mdebconf[0m
+[01;32mdebconf-apt-progress[0m
+[01;32mdebconf-communicate[0m
+[01;32mdebconf-copydb[0m
+[01;32mdebconf-escape[0m
+[01;32mdebconf-gettextize[0m
+[01;32mdebconf-set-selections[0m
+[01;32mdebconf-show[0m
+[01;32mdebconf-updatepo[0m
+[01;32mdefoma[0m
+[01;36mdefoma-app[0m
+[01;36mdefoma-font[0m
+[01;32mdefoma-hints[0m
+[01;36mdefoma-id[0m
+[01;32mdefoma-psfont-installer[0m
+[01;36mdefoma-subst[0m
+[01;36mdefoma-user[0m
+[01;32mdehtmldiff[0m
+[01;32mdeja-dup[0m
+[01;32mdeja-dup-preferences[0m
+[01;32mdelpart[0m
+[01;36mdesktop-file-edit[0m
+[01;32mdesktop-file-install[0m
+[01;32mdesktop-file-validate[0m
+[01;32mdetex[0m
+[01;32mdevdump[0m
+[01;32mdevnag[0m
+[01;32mdfutool[0m
+[01;32mdh[0m
+[01;32mdh_apparmor[0m
+[01;32mdh_auto_build[0m
+[01;32mdh_auto_clean[0m
+[01;32mdh_auto_configure[0m
+[01;32mdh_auto_install[0m
+[01;32mdh_auto_test[0m
+[01;32mdh_autotools-dev_restoreconfig[0m
+[01;32mdh_autotools-dev_updateconfig[0m
+[01;32mdh_bash-completion[0m
+[01;32mdh_bugfiles[0m
+[01;32mdh_builddeb[0m
+[01;32mdh_clean[0m
+[01;32mdh_compress[0m
+[01;32mdh_desktop[0m
+[01;32mdh_dkms[0m
+[01;32mdh_fixperms[0m
+[01;32mdh_gconf[0m
+[01;32mdh_gencontrol[0m
+[01;32mdh_gtkmodules[0m
+[01;32mdh_icons[0m
+[01;32mdh_install[0m
+[01;32mdh_installcatalogs[0m
+[01;32mdh_installchangelogs[0m
+[01;32mdh_installcron[0m
+[01;32mdh_installdeb[0m
+[01;32mdh_installdebconf[0m
+[01;32mdh_installdefoma[0m
+[01;32mdh_installdirs[0m
+[01;32mdh_installdocs[0m
+[01;32mdh_installemacsen[0m
+[01;32mdh_installexamples[0m
+[01;32mdh_installgsettings[0m
+[01;32mdh_installifupdown[0m
+[01;32mdh_installinfo[0m
+[01;32mdh_installinit[0m
+[01;32mdh_installlogcheck[0m
+[01;32mdh_installlogrotate[0m
+[01;32mdh_installman[0m
+[01;32mdh_installmanpages[0m
+[01;32mdh_installmenu[0m
+[01;32mdh_installmime[0m
+[01;32mdh_installmodules[0m
+[01;32mdh_installpam[0m
+[01;32mdh_installppp[0m
+[01;32mdh_installtex[0m
+[01;32mdh_installudev[0m
+[01;32mdh_installwm[0m
+[01;32mdh_installxfonts[0m
+[01;32mdh_installxmlcatalogs[0m
+[01;32mdh_javadoc[0m
+[01;32mdh_link[0m
+[01;32mdh_lintian[0m
+[01;32mdh_listpackages[0m
+[01;32mdh_makeshlibs[0m
+[01;32mdh_md5sums[0m
+[01;32mdh_movefiles[0m
+[01;32mdh_nativejava[0m
+[01;32mdh_pangomodules[0m
+[01;32mdh_perl[0m
+[01;32mdh_prep[0m
+[01;32mdh_pycentral[0m
+[01;32mdh_pysupport[0m
+[01;32mdh_python[0m
+[01;32mdh_python2[0m
+[01;32mdh_quilt_patch[0m
+[01;32mdh_quilt_unpatch[0m
+[01;32mdh_scrollkeeper[0m
+[01;32mdh_shlibdeps[0m
+[01;32mdh_strip[0m
+[01;32mdh_suidregister[0m
+[01;32mdh_testdir[0m
+[01;32mdh_testroot[0m
+[01;32mdh_ucf[0m
+[01;32mdh_undocumented[0m
+[01;32mdh_usrlocal[0m
+[01;32mdiff[0m
+[01;32mdiff3[0m
+[01;32mdiffimg[0m
+[01;32mdiffstat[0m
+[01;32mdig[0m
+[01;32mdijkstra[0m
+[01;32mdircolors[0m
+[01;36mdirectomatic[0m
+[01;32mdirname[0m
+[01;32mdirsplit[0m
+[01;32mdisdvi[0m
+[01;32mdisplay[0m
+[01;32mdm-tool[0m
+[01;32mdo-release-upgrade[0m
+[01;32mdot[0m
+[01;36mdot2gxl[0m
+[30;43mdotlockfile[0m
+[01;32mdotty[0m
+[01;32mdoxygen[0m
+[01;32mdoxytag[0m
+[01;32mdpkg[0m
+[01;32mdpkg-architecture[0m
+[01;32mdpkg-buildflags[0m
+[01;32mdpkg-buildpackage[0m
+[01;32mdpkg-checkbuilddeps[0m
+[01;32mdpkg-deb[0m
+[01;32mdpkg-distaddfile[0m
+[01;32mdpkg-divert[0m
+[01;32mdpkg-genchanges[0m
+[01;32mdpkg-gencontrol[0m
+[01;32mdpkg-gensymbols[0m
+[01;32mdpkg-log-summary[0m
+[01;32mdpkg-maintscript-helper[0m
+[01;32mdpkg-mergechangelogs[0m
+[01;32mdpkg-name[0m
+[01;32mdpkg-parsechangelog[0m
+[01;32mdpkg-query[0m
+[01;32mdpkg-scanpackages[0m
+[01;32mdpkg-scansources[0m
+[01;32mdpkg-shlibdeps[0m
+[01;32mdpkg-source[0m
+[01;32mdpkg-split[0m
+[01;32mdpkg-statoverride[0m
+[01;32mdpkg-trigger[0m
+[01;32mdpkg-vendor[0m
+[01;32mdprofpp[0m
+[01;32mdt2dv[0m
+[01;32mdu[0m
+[01;32mdumphint[0m
+[01;36mdumpkeys[0m
+[01;32mduplicity[0m
+[01;32mdv2dt[0m
+[01;32mdvd-ram-control[0m
+[01;32mdvd+rw-booktype[0m
+[01;32mdvd+rw-format[0m
+[01;32mdvd+rw-mediainfo[0m
+[01;32mdvi2fax[0m
+[01;32mdvi2tty[0m
+[01;32mdvibook[0m
+[01;32mdviconcat[0m
+[01;32mdvicopy[0m
+[01;32mdvihp[0m
+[01;32mdvilj[0m
+[01;32mdvilj2p[0m
+[01;32mdvilj4[0m
+[01;32mdvilj4l[0m
+[01;36mdvilj6[0m
+[01;36mdvilualatex[0m
+[01;36mdviluatex[0m
+[01;32mdvipdf[0m
+[01;36mdvipdfm[0m
+[01;32mdvipdfmx[0m
+[01;32mdvipdft[0m
+[01;32mdvipos[0m
+[01;32mdvips[0m
+[01;32mdvired[0m
+[01;32mdviselect[0m
+[01;32mdvitodvi[0m
+[01;36mdvitomp[0m
+[01;32mdvitype[0m
+[01;36mebb[0m
+[01;32mecj[0m
+[01;32mecj-gcj[0m
+[01;32mecryptfs-add-passphrase[0m
+[01;32mecryptfsd[0m
+[01;36mecryptfs-find[0m
+[01;32mecryptfs-insert-wrapped-passphrase-into-keyring[0m
+[01;32mecryptfs-manager[0m
+[01;32mecryptfs-migrate-home[0m
+[01;32mecryptfs-mount-private[0m
+[01;32mecryptfs-recover-private[0m
+[01;32mecryptfs-rewrap-passphrase[0m
+[01;32mecryptfs-rewrite-file[0m
+[01;32mecryptfs-setup-private[0m
+[01;32mecryptfs-setup-swap[0m
+[01;32mecryptfs-stat[0m
+[01;32mecryptfs-umount-private[0m
+[01;32mecryptfs-unwrap-passphrase[0m
+[01;32mecryptfs-verify[0m
+[01;32mecryptfs-wrap-passphrase[0m
+[01;36medit[0m
+[01;32meditdiff[0m
+[01;36meditor[0m
+[01;32meditres[0m
+[01;32meject[0m
+[01;32melfedit[0m
+[01;32mempathy[0m
+[01;32mempathy-accounts[0m
+[01;32mempathy-debugger[0m
+[01;32menc2xs[0m
+[01;32menchant[0m
+[01;32menchant-lsmod[0m
+[01;32menv[0m
+[01;32menvsubst[0m
+[01;32meog[0m
+[01;36mepmd[0m
+[01;32meps2eps[0m
+[01;32meqn[0m
+[01;36merl[0m
+[01;36merlc[0m
+[01;36merl_call[0m
+[01;32mesc-m[0m
+[01;36mescript[0m
+[01;36mesd[0m
+[01;32mesdcompat[0m
+[01;32mespeak[0m
+[01;36metex[0m
+[01;32mevince[0m
+[01;32mevince-previewer[0m
+[01;32mevince-thumbnailer[0m
+[01;32mevolution[0m
+[01;32mevolution-settings[0m
+[01;36mex[0m
+[01;32mexchange-connector-setup-3.2[0m
+[01;32mexpand[0m
+[01;32mexpect[0m
+[30;43mexpiry[0m
+[01;32mexpr[0m
+[01;36mextractbb[0m
+[01;32meyuvtoppm[0m
+[01;32mfactor[0m
+[01;32mfaillog[0m
+[01;32mfaked-sysv[0m
+[01;32mfaked-tcp[0m
+[01;36mfakeroot[0m
+[01;32mfakeroot-sysv[0m
+[01;32mfakeroot-tcp[0m
+[01;32mfallocate[0m
+[01;32mfastjar[0m
+[01;32mfc-cache[0m
+[01;32mfc-cat[0m
+[01;32mfcitx[0m
+[01;32mfcitx-config-gtk3[0m
+[01;32mfcitx-configtool[0m
+[01;32mfcitx-remote[0m
+[01;32mfcitx-skin-installer[0m
+[01;32mfc-list[0m
+[01;32mfc-match[0m
+[01;32mfc-query[0m
+[01;32mfc-scan[0m
+[01;36mfdp[0m
+[01;36mfgl_glxgears[0m
+[01;36mfglrxinfo[0m
+[01;32mfiascotopnm[0m
+[01;32mfile[0m
+[01;32mfile-roller[0m
+[01;32mfilterdiff[0m
+[01;32mfind[0m
+[01;32mfind2perl[0m
+[01;32mfindsmb[0m
+[01;32mfinger[0m
+[01;36mfirefox[0m
+[01;32mfitstopnm[0m
+[01;32mfixcvsdiff[0m
+[01;32mflex[0m
+[01;36mflex++[0m
+[01;36mflipdiff[0m
+[01;32mflock[0m
+[01;32mfmt[0m
+[01;32mfmtutil[0m
+[01;32mfmtutil-sys[0m
+[01;32mfold[0m
+[01;32mfont2c[0m
+[01;32mfontconfig-voodoo[0m
+[01;32mfontinst[0m
+[01;32mfonttosfnt[0m
+[01;32mfoo2hiperc[0m
+[01;32mfoo2hiperc-wrapper[0m
+[01;32mfoo2hp[0m
+[01;32mfoo2hp2600-wrapper[0m
+[01;32mfoo2lava[0m
+[01;32mfoo2lava-wrapper[0m
+[01;32mfoo2oak[0m
+[01;32mfoo2oak-wrapper[0m
+[01;32mfoo2qpdl[0m
+[01;32mfoo2qpdl-wrapper[0m
+[01;32mfoo2slx[0m
+[01;32mfoo2slx-wrapper[0m
+[01;32mfoo2xqx[0m
+[01;32mfoo2xqx-wrapper[0m
+[01;32mfoo2zjs[0m
+[01;32mfoo2zjs-icc2ps[0m
+[01;32mfoo2zjs-pstops[0m
+[01;32mfoo2zjs-wrapper[0m
+[01;32mfoomatic-combo-xml[0m
+[01;32mfoomatic-compiledb[0m
+[01;32mfoomatic-configure[0m
+[01;36mfoomatic-datafile[0m
+[01;32mfoomatic-perl-data[0m
+[01;32mfoomatic-ppdfile[0m
+[01;32mfoomatic-ppd-options[0m
+[01;32mfoomatic-ppd-to-xml[0m
+[01;32mfoomatic-printjob[0m
+[01;32mfoomatic-rip[0m
+[01;32mfoomatic-searchprinter[0m
+[01;32mfree[0m
+[01;32mfreetype-config[0m
+[01;32mfribidi[0m
+[01;36mfrom[0m
+[01;32mfslsfonts[0m
+[01;32mf-spot[0m
+[01;32mf-spot-import[0m
+[01;32mf-spot-sqlite-upgrade[0m
+[01;32mfstobdf[0m
+[01;32mfstopgm[0m
+[01;36mftp[0m
+[01;32mfunzip[0m
+[01;36mg++[0m
+[01;32mg3topbm[0m
+[01;32mg++-4.4[0m
+[01;32mg++-4.6[0m
+[01;32mgacutil[0m
+[01;32mgacutil2[0m
+[01;32mgamma4scanimage[0m
+[01;36mgappletviewer[0m
+[01;32mgappletviewer-4.6[0m
+[01;32mgatttool[0m
+[01;32mgawk[0m
+[01;32mgc[0m
+[01;32mgcalccmd[0m
+[01;32mgcalctool[0m
+[01;32mgc-analyze-4.6[0m
+[01;36mgcc[0m
+[01;32mgcc-4.4[0m
+[01;32mgcc-4.6[0m
+[01;36mgcj[0m
+[01;32mgcj-4.6[0m
+[01;36mgcj-dbtool[0m
+[01;32mgcj-dbtool-4.6[0m
+[01;36mgcjh[0m
+[01;32mgcjh-4.6[0m
+[01;36mgcj-wrapper[0m
+[01;32mgcj-wrapper-4.6[0m
+[01;32mgconf-editor[0m
+[01;32mgconf-merge-tree[0m
+[01;36mgconftool[0m
+[01;32mgconftool-2[0m
+[01;32mgcore[0m
+[01;36mgcov[0m
+[01;32mgcov-4.4[0m
+[01;32mgcov-4.6[0m
+[01;32mgcr-viewer[0m
+[01;32mgdb[0m
+[01;32mgdbtui[0m
+[01;32mgdbus[0m
+[01;32mgdbus-codegen[0m
+[01;36mgdebi[0m
+[01;36mgdebi-gtk[0m
+[01;32mgdialog[0m
+[01;32mgdk-pixbuf-csource[0m
+[01;32mgdk-pixbuf-pixdata[0m
+[01;36mgdk-pixbuf-query-loaders[0m
+[01;32mgdmflexiserver[0m
+[01;32mgdm-screenshot[0m
+[01;32mgedit[0m
+[01;36mgemtopbm[0m
+[01;32mgemtopnm[0m
+[01;32mgencat[0m
+[01;32mgenisoimage[0m
+[01;36mgeqn[0m
+[01;36mGET[0m
+[01;32mgetconf[0m
+[01;32mgetdefs[0m
+[01;32mgeteltorito[0m
+[01;32mgetent[0m
+[01;36mgetfacl[0m
+[01;32mgethostip[0m
+[01;32mgetkeycodes[0m
+[01;32mgetopt[0m
+[01;32mgettext[0m
+[01;32mgettextize[0m
+[01;32mgettext.sh[0m
+[01;32mgetweb[0m
+[01;32mgftodvi[0m
+[01;32mgftopk[0m
+[01;32mgftype[0m
+[01;36mghostscript[0m
+[01;32mgiftopnm[0m
+[01;36mgij[0m
+[01;32mgij-4.6[0m
+[01;32mginn[0m
+[01;32mginstall-info[0m
+[01;36mgio-querymodules[0m
+[01;32mgipddecode[0m
+[01;32mgit[0m
+[01;36mgit-receive-pack[0m
+[01;32mgit-shell[0m
+[01;36mgit-upload-archive[0m
+[01;32mgit-upload-pack[0m
+[01;36mgjar[0m
+[01;32mgjar-4.6[0m
+[01;36mgjarsigner[0m
+[01;32mgjarsigner-4.6[0m
+[01;36mgjavah[0m
+[01;32mgjavah-4.6[0m
+[01;36mgjdoc[0m
+[01;32mgjdoc-4.6[0m
+[01;36mgjs[0m
+[01;32mgjs-console[0m
+[01;36mgkeytool[0m
+[01;32mgkeytool-4.6[0m
+[01;32mgksu[0m
+[01;36mgksudo[0m
+[01;32mgksu-properties[0m
+[01;36mglib-compile-resources[0m
+[01;36mglib-compile-schemas[0m
+[01;32mglib-genmarshal[0m
+[01;32mglib-gettextize[0m
+[01;32mglib-mkenums[0m
+[01;32mgml2gv[0m
+[01;32mgnative2ascii-4.6[0m
+[01;36mgnome-calculator[0m
+[01;36mgnome-character-map[0m
+[01;32mgnome-contacts[0m
+[01;32mgnome-control-center[0m
+[01;32mgnome-desktop-item-edit[0m
+[01;32mgnome-dictionary[0m
+[01;32mgnome-doc-prepare[0m
+[01;32mgnome-doc-tool[0m
+[01;32mgnome-file-share-properties[0m
+[01;32mgnome-font-viewer[0m
+[01;36mgnome-help[0m
+[01;36mgnome-keyring[0m
+[01;32mgnome-keyring-3[0m
+[01;32mgnome-keyring-daemon[0m
+[01;32mgnome-language-selector[0m
+[01;32mgnome-nettool[0m
+[01;32mgnome-open[0m
+[01;32mgnome-panel[0m
+[01;32mgnome-power-statistics[0m
+[01;32mgnome-screensaver[0m
+[01;32mgnome-screensaver-command[0m
+[01;32mgnome-screenshot[0m
+[01;32mgnome-search-tool[0m
+[01;32mgnome-session[0m
+[01;32mgnome-session-fallback[0m
+[01;32mgnome-session-properties[0m
+[01;32mgnome-session-quit[0m
+[01;36mgnome-settings-daemon[0m
+[01;32mgnome-shell[0m
+[01;32mgnome-shell-extension-prefs[0m
+[01;32mgnome-shell-extension-tool[0m
+[01;32mgnome-sound-applet[0m
+[01;32mgnome-sound-recorder[0m
+[01;32mgnome-system-log[0m
+[01;32mgnome-system-monitor[0m
+[01;32mgnome-terminal[0m
+[01;32mgnome-terminal.wrapper[0m
+[01;36mgnome-text-editor[0m
+[01;32mgnome-thumbnail-font[0m
+[01;32mgnome-tweak-tool[0m
+[01;32mgnome-wm[0m
+[01;36mgnome-www-browser[0m
+[01;32mgobject-query[0m
+[01;36mgold[0m
+[01;36mgorbd[0m
+[01;32mgorbd-4.6[0m
+[01;32mgouldtoppm[0m
+[37;41mgpasswd[0m
+[01;32mgperf[0m
+[01;32mgpg[0m
+[01;32mgpgsplit[0m
+[01;32mgpgv[0m
+[01;32mgpg-zip[0m
+[01;36mgpic[0m
+[01;32mgprof[0m
+[01;36mgrepdiff[0m
+[01;32mgrepjar[0m
+[01;32mgresource[0m
+[01;36mgrmic[0m
+[01;32mgrmic-4.6[0m
+[01;36mgrmid[0m
+[01;32mgrmid-4.6[0m
+[01;36mgrmiregistry[0m
+[01;32mgrmiregistry-4.6[0m
+[01;32mgroff[0m
+[01;32mgrog[0m
+[01;32mgrops[0m
+[01;32mgrotty[0m
+[01;32mgroups[0m
+[01;32mgrowisofs[0m
+[01;32mgrub-bin2h[0m
+[01;32mgrub-editenv[0m
+[01;32mgrub-fstest[0m
+[01;32mgrub-kbdcomp[0m
+[01;32mgrub-menulst2cfg[0m
+[01;32mgrub-mkfont[0m
+[01;32mgrub-mkimage[0m
+[01;32mgrub-mklayout[0m
+[01;32mgrub-mkpasswd-pbkdf2[0m
+[01;32mgrub-mkrelpath[0m
+[01;32mgrub-mkrescue[0m
+[01;32mgrub-mount[0m
+[01;36mgrub-ntldr-img[0m
+[01;32mgrub-script-check[0m
+[01;32mgs[0m
+[01;32mgsbj[0m
+[01;32mgsdj[0m
+[01;32mgsdj500[0m
+[01;36mgserialver[0m
+[01;32mgserialver-4.6[0m
+[01;32mgsettings[0m
+[01;32mgsettings-data-convert[0m
+[01;32mgsettings-schema-convert[0m
+[01;32mgsftopk[0m
+[01;32mgslj[0m
+[01;32mgslp[0m
+[01;32mgsnd[0m
+[01;32mgst-discoverer-0.10[0m
+[01;32mgst-feedback-0.10[0m
+[01;32mgst-inspect-0.10[0m
+[01;32mgst-install[0m
+[01;32mgst-launch-0.10[0m
+[01;32mgstm[0m
+[01;36mgstreamer-codec-install[0m
+[01;32mgstreamer-properties[0m
+[01;32mgst-typefind-0.10[0m
+[01;32mgst-visualise-0.10[0m
+[01;32mgst-xmlinspect-0.10[0m
+[01;32mgst-xmllaunch-0.10[0m
+[01;36mgtbl[0m
+[01;32mgtester[0m
+[01;32mgtester-report[0m
+[01;32mgtf[0m
+[01;32mgtk-builder-convert[0m
+[01;36mgtk-query-immodules-3.0[0m
+[01;36mgtk-update-icon-cache[0m
+[01;36mgtk-update-icon-cache-3.0[0m
+[01;32mgtk-window-decorator[0m
+[01;36mgtnameserv[0m
+[01;32mgtnameserv-4.6[0m
+[01;32mguards[0m
+[01;32mgucharmap[0m
+[01;36mgv2gxl[0m
+[01;32mgvcolor[0m
+[01;32mgvfs-cat[0m
+[01;32mgvfs-copy[0m
+[01;32mgvfs-info[0m
+[01;32mgvfs-less[0m
+[01;32mgvfs-ls[0m
+[01;32mgvfs-mime[0m
+[01;32mgvfs-mkdir[0m
+[01;32mgvfs-monitor-dir[0m
+[01;32mgvfs-monitor-file[0m
+[01;32mgvfs-mount[0m
+[01;32mgvfs-move[0m
+[01;32mgvfs-open[0m
+[01;32mgvfs-rename[0m
+[01;32mgvfs-rm[0m
+[01;32mgvfs-save[0m
+[01;32mgvfs-set-attribute[0m
+[01;32mgvfs-trash[0m
+[01;32mgvfs-tree[0m
+[01;32mgvgen[0m
+[01;32mgvpack[0m
+[01;32mgvpr[0m
+[01;32mgwibber[0m
+[01;32mgwibber-accounts[0m
+[01;32mgwibber-poster[0m
+[01;32mgwibber-preferences[0m
+[01;32mgwibber-service[0m
+[01;36mgxl2dot[0m
+[01;32mgxl2gv[0m
+[01;32mh2ph[0m
+[01;32mh2xs[0m
+[01;32mhal-device[0m
+[01;32mhal-disable-polling[0m
+[01;32mhal-find-by-capability[0m
+[01;32mhal-find-by-property[0m
+[01;32mhal-get-property[0m
+[01;32mhal-is-caller-locked-out[0m
+[01;32mhal-lock[0m
+[01;32mhal-set-property[0m
+[01;32mhbpldecode[0m
+[01;32mhcitool[0m
+[01;36mhd[0m
+[01;32mhead[0m
+[01;36mHEAD[0m
+[01;32mhelpztags[0m
+[01;32mhexdump[0m
+[01;32mhipercdecode[0m
+[01;32mhipstopgm[0m
+[01;32mhost[0m
+[01;32mhostid[0m
+[01;36mhp-align[0m
+[01;36mhp-check[0m
+[01;36mhp-clean[0m
+[01;36mhp-colorcal[0m
+[01;36mhp-firmware[0m
+[01;36mhp-hpdio[0m
+[01;32mhpijs[0m
+[01;36mhp-info[0m
+[01;36mhp-levels[0m
+[01;36mhp-makeuri[0m
+[01;32mhp-mkuri[0m
+[01;36mhp-pkservice[0m
+[01;36mhp-plugin[0m
+[01;32mhp-plugin-ubuntu[0m
+[01;36mhp-probe[0m
+[01;36mhp-query[0m
+[01;36mhp-scan[0m
+[01;36mhp-setup[0m
+[01;36mhp-testpage[0m
+[01;36mhp-timedate[0m
+[01;36mhp-unload[0m
+[01;32mhtml2text[0m
+[01;32mhybrid-detect[0m
+[01;36mi386[0m
+[01;36mi686-linux-gnu-cpp[0m
+[01;36mi686-linux-gnu-cpp-4.4[0m
+[01;36mi686-linux-gnu-cpp-4.6[0m
+[01;36mi686-linux-gnu-g++[0m
+[01;36mi686-linux-gnu-g++-4.4[0m
+[01;36mi686-linux-gnu-g++-4.6[0m
+[01;36mi686-linux-gnu-gcc[0m
+[01;36mi686-linux-gnu-gcc-4.4[0m
+[01;36mi686-linux-gnu-gcc-4.6[0m
+[01;36mi686-linux-gnu-gcj[0m
+[01;36mi686-linux-gnu-gcj-4.6[0m
+[01;32mibus-daemon[0m
+[01;32mibus-setup[0m
+[01;32mibus-table-createdb[0m
+[01;32miceauth[0m
+[01;32mico[0m
+[01;32micontopbm[0m
+[01;32miconv[0m
+[01;32mid[0m
+[01;32midentify[0m
+[01;32miecset[0m
+[01;32mifnames[0m
+[01;32mifnames2.64[0m
+[01;32migawk[0m
+[01;32mijs_pxljr[0m
+[01;32milbmtoppm[0m
+[01;32mimgtoppm[0m
+[01;32mimport[0m
+[01;32mim-switch[0m
+[01;32minfo[0m
+[01;36minfobrowser[0m
+[01;32minfocmp[0m
+[01;32minfokey[0m
+[01;36minfotocap[0m
+[01;32minputattach[0m
+[01;32minstall[0m
+[01;32minstall-info[0m
+[01;32minstmodsh[0m
+[01;32mintel_audio_dump[0m
+[01;32mintel_backlight[0m
+[01;32mintel_bios_dumper[0m
+[01;32mintel_bios_reader[0m
+[01;32mintel_disable_clock_gating[0m
+[01;32mintel_error_decode[0m
+[01;32mintel_forcewaked[0m
+[01;32mintel_gpu_abrt[0m
+[01;32mintel_gpu_time[0m
+[01;32mintel_gpu_top[0m
+[01;32mintel_gtt[0m
+[01;32mintel_reg_checker[0m
+[01;32mintel_reg_dumper[0m
+[01;32mintel_reg_read[0m
+[01;32mintel_reg_snapshot[0m
+[01;32mintel_reg_write[0m
+[01;32mintel_stepping[0m
+[01;32mintel_upload_blit_large[0m
+[01;32mintel_upload_blit_large_gtt[0m
+[01;32mintel_upload_blit_large_map[0m
+[01;32mintel_upload_blit_small[0m
+[01;32minterdiff[0m
+[01;32minvest-chart[0m
+[01;32mionice[0m
+[01;32mipcmk[0m
+[01;32mipcrm[0m
+[01;32mipcs[0m
+[01;32mipod-read-sysinfo-extended[0m
+[01;32mipod-time-sync[0m
+[01;32mipptool[0m
+[01;32miproxy[0m
+[01;36miptables-xml[0m
+[01;32mischroot[0m
+[01;32misdv4-serial-debugger[0m
+[01;32misodump[0m
+[01;32misohybrid[0m
+[01;32misohybrid.pl[0m
+[01;32misoinfo[0m
+[01;32misovfy[0m
+[01;32mispell-wrapper[0m
+[01;36mjar[0m
+[01;36mjarsigner[0m
+[01;36mjava[0m
+[01;36mjavac[0m
+[01;36mjavadoc[0m
+[01;36mjavah[0m
+[01;36mjcf-dump[0m
+[01;32mjcf-dump-4.6[0m
+[01;32mjockey-gtk[0m
+[01;32mjockey-text[0m
+[01;32mjoin[0m
+[01;32mjpegtopnm[0m
+[01;32mjson_pp[0m
+[01;36mjv-convert[0m
+[01;32mjv-convert-4.6[0m
+[01;32mkerneloops-submit[0m
+[01;36mkeytool[0m
+[01;32mkillall[0m
+[01;32mkoi8rxterm[0m
+[01;32mkpseaccess[0m
+[01;36mkpsepath[0m
+[01;32mkpsereadlink[0m
+[01;32mkpsestat[0m
+[01;32mkpsetool[0m
+[01;32mkpsewhere[0m
+[01;32mkpsewhich[0m
+[01;36mkpsexpand[0m
+[01;32ml2ping[0m
+[01;32ml2test[0m
+[01;32mlandscape-client-ui-install[0m
+[01;32mlast[0m
+[01;36mlastb[0m
+[01;32mlastlog[0m
+[01;36mlatex[0m
+[01;32mlaunchpad-integration[0m
+[01;32mlavadecode[0m
+[01;32mlcf[0m
+[01;36mld[0m
+[01;32mld.bfd[0m
+[01;32mldd[0m
+[01;32mld.gold[0m
+[01;32mleaftoppm[0m
+[01;32mlefty[0m
+[01;36mless[0m
+[01;36mlessecho[0m
+[01;36mlessfile[0m
+[01;36mlesskey[0m
+[01;36mlesspipe[0m
+[01;36mlex[0m
+[01;32mlexgrog[0m
+[01;32mlftp[0m
+[01;32mlftpget[0m
+[01;32mlibftdi-config[0m
+[01;32mlibnetcfg[0m
+[01;32mlibpng12-config[0m
+[01;36mlibpng-config[0m
+[01;36mlibreoffice[0m
+[01;32mlibtool[0m
+[01;32mlibtoolize[0m
+[01;32mlibusb-config[0m
+[01;32mlink[0m
+[01;36mlinux32[0m
+[01;36mlinux64[0m
+[01;32mlinux-boot-prober[0m
+[01;32mlispmtopgm[0m
+[01;32mlistres[0m
+[01;32mlneato[0m
+[01;32mlnstat[0m
+[01;36mloadkeys[0m
+[01;32mloadunimap[0m
+[01;32mlocalc[0m
+[01;32mlocale[0m
+[01;32mlocaledef[0m
+[01;36mlocate[0m
+[01;32mlockfile-check[0m
+[01;32mlockfile-create[0m
+[01;32mlockfile-remove[0m
+[01;32mlockfile-touch[0m
+[01;32mlodraw[0m
+[01;32mloffice[0m
+[01;32mlofromtemplate[0m
+[01;32mlogger[0m
+[01;32mlogname[0m
+[01;32mloimpress[0m
+[01;32mlomath[0m
+[01;32mlook[0m
+[01;32mlorder[0m
+[01;32mloweb[0m
+[01;32mlowriter[0m
+[01;32mlp[0m
+[01;32mlpoptions[0m
+[37;41mlppasswd[0m
+[01;32mlpq[0m
+[01;32mlpr[0m
+[01;32mlprm[0m
+[01;32mlp_solve[0m
+[01;32mlpstat[0m
+[01;32mlsattr[0m
+[01;32mlsb_release[0m
+[01;32mlscpu[0m
+[01;36mlsdiff[0m
+[01;32mlshal[0m
+[01;32mlshw[0m
+[01;32mlsinitramfs[0m
+[01;32mlsof[0m
+[01;32mlspci[0m
+[01;32mlspgpot[0m
+[01;32mlss16toppm[0m
+[01;32mlsusb[0m
+[01;32mltrace[0m
+[01;36mlualatex[0m
+[01;32mluatex[0m
+[01;32mluit[0m
+[01;32mlwp-download[0m
+[01;32mlwp-dump[0m
+[01;32mlwp-mirror[0m
+[01;32mlwp-request[0m
+[01;32mlxterm[0m
+[01;36mlz[0m
+[01;36mlzcat[0m
+[01;36mlzcmp[0m
+[01;36mlzdiff[0m
+[01;36mlzegrep[0m
+[01;36mlzfgrep[0m
+[01;36mlzgrep[0m
+[01;36mlzless[0m
+[01;36mlzma[0m
+[01;32mlzmainfo[0m
+[01;36mlzmore[0m
+[01;32mm17n-db[0m
+[01;32mm4[0m
+[01;32mmacptopbm[0m
+[01;32mmag[0m
+[01;32mmagnifier[0m
+[30;43mmail-lock[0m
+[30;43mmail-touchlock[0m
+[30;43mmail-unlock[0m
+[01;32mmake[0m
+[01;32mmakeindex[0m
+[01;32mmakeinfo[0m
+[01;32mmake_method[0m
+[01;32mmako-render[0m
+[01;32mman[0m
+[01;32mmandb[0m
+[01;32mmanhole[0m
+[01;32mmanpath[0m
+[01;32mmapscrn[0m
+[01;36mmattrib[0m
+[01;32mmawk[0m
+[01;36mmbadblocks[0m
+[01;36mmcat[0m
+[01;36mmcd[0m
+[01;32mmcheck[0m
+[01;36mmclasserase[0m
+[01;32mmcomp[0m
+[01;32mmcookie[0m
+[01;36mmcopy[0m
+[01;32mmc-tool[0m
+[01;32mmc-wait-for-name[0m
+[01;32mmd5pass[0m
+[01;32mmd5sum[0m
+[01;36mmd5sum.textutils[0m
+[01;32mmdatopbm[0m
+[01;36mmdel[0m
+[01;36mmdeltree[0m
+[01;36mmdir[0m
+[01;36mmdu[0m
+[01;32mmemdiskfind[0m
+[01;32mmesg[0m
+[01;32mmetacity[0m
+[01;32mmetacity-message[0m
+[01;32mmetacity-theme-viewer[0m
+[01;32mmetacity-window-demo[0m
+[01;32mmf[0m
+[01;32mmf-nowin[0m
+[01;36mmformat[0m
+[01;32mmft[0m
+[01;32mmgrtopbm[0m
+[01;32mmimeopen[0m
+[01;32mmimetype[0m
+[01;32mmin12xxw[0m
+[01;36mminfo[0m
+[01;32mminiterm.py[0m
+[01;32mmkdiskimage[0m
+[01;32mmkfifo[0m
+[01;32mmkfontdir[0m
+[01;32mmkfontscale[0m
+[01;32mmkindex[0m
+[01;36mmkisofs[0m
+[01;32mmkmanifest[0m
+[01;32mmk_modmap[0m
+[01;32mmkocp[0m
+[01;32mmkofm[0m
+[01;32mmkpasswd[0m
+[01;36mmktexfmt[0m
+[01;32mmktexlsr[0m
+[01;32mmktexmf[0m
+[01;32mmktexpk[0m
+[01;32mmktextfm[0m
+[01;32mmkzftree[0m
+[01;36mmlabel[0m
+[30;43mmlocate[0m
+[01;32mmm2gv[0m
+[01;36mmmd[0m
+[01;36mmmount[0m
+[01;36mmmove[0m
+[01;32mmogrify[0m
+[01;32mmono[0m
+[01;32mmontage[0m
+[01;32mmousetweaks[0m
+[01;36mmpartition[0m
+[01;32mmpost[0m
+[01;36mmrd[0m
+[01;36mmren[0m
+[01;32mmscompress[0m
+[01;32mmsexpand[0m
+[01;32mmsgattrib[0m
+[01;32mmsgcat[0m
+[01;32mmsgcmp[0m
+[01;32mmsgcomm[0m
+[01;32mmsgconv[0m
+[01;32mmsgen[0m
+[01;32mmsgexec[0m
+[01;32mmsgfilter[0m
+[01;32mmsgfmt[0m
+[01;32mmsggrep[0m
+[01;32mmsginit[0m
+[01;32mmsgmerge[0m
+[01;32mmsgunfmt[0m
+[01;32mmsguniq[0m
+[01;36mmshowfat[0m
+[01;32mmtools[0m
+[01;36mmtoolstest[0m
+[37;41mmtr[0m
+[01;32mmtrace[0m
+[01;32mmtvtoppm[0m
+[01;36mmtype[0m
+[01;32mmxtar[0m
+[01;36mmzip[0m
+[01;32mnamei[0m
+[01;36mnano[0m
+[01;36mnative2ascii[0m
+[01;32mnautilus[0m
+[01;32mnautilus-autorun-software[0m
+[01;32mnautilus-connect-server[0m
+[01;32mnautilus-sendto[0m
+[01;36mnawk[0m
+[01;32mncal[0m
+[01;32mncurses5-config[0m
+[01;32mncursesw5-config[0m
+[01;36mneato[0m
+[01;32mneotoppm[0m
+[01;32mneqn[0m
+[01;36mnet[0m
+[01;32mnetkit-ftp[0m
+[01;32mnet.samba3[0m
+[01;32mnet-snmp-config[0m
+[37;41mnewgrp[0m
+[01;32mngettext[0m
+[01;32mnice[0m
+[01;32mnl[0m
+[01;32mnm[0m
+[01;32mnm-applet[0m
+[01;36mnmblookup[0m
+[01;32mnmblookup.samba3[0m
+[01;32mnmcli[0m
+[01;32mnm-connection-editor[0m
+[01;32mnm-online[0m
+[01;32mnm-tool[0m
+[01;32mnohup[0m
+[01;32mnop[0m
+[01;32mnotify-send[0m
+[01;32mnproc[0m
+[01;32mnroff[0m
+[01;32mnslookup[0m
+[01;32mnstat[0m
+[01;32mnsupdate[0m
+[01;32mnvidia-detector[0m
+[01;32moakdecode[0m
+[01;32mobex-data-server[0m
+[01;32mobjcopy[0m
+[01;32mobjdump[0m
+[01;32moclock[0m
+[01;32mod[0m
+[01;32mods-server[0m
+[01;32modvicopy[0m
+[01;32modvitype[0m
+[01;36mofm2opl[0m
+[01;32moldfind[0m
+[01;32momfonts[0m
+[01;32momshell[0m
+[01;36mon_ac_power[0m
+[01;32monboard[0m
+[01;32monboard-settings[0m
+[01;36moneconf-query[0m
+[01;36moocalc[0m
+[01;36moodraw[0m
+[01;36moofromtemplate[0m
+[01;36mooimpress[0m
+[01;36moomath[0m
+[01;36mooweb[0m
+[01;36moowriter[0m
+[01;32mopenocd[0m
+[01;36mopenoffice.org[0m
+[01;32mopenssl[0m
+[01;36mopl2ofm[0m
+[01;32mopldecode[0m
+[01;36morbd[0m
+[01;32morca[0m
+[01;36mosage[0m
+[01;32mos-prober[0m
+[01;32motangle[0m
+[01;32motp2ocp[0m
+[01;32moutocp[0m
+[01;36movf2ovp[0m
+[01;36movp2ovf[0m
+[01;32mpacat[0m
+[01;32mpacmd[0m
+[01;32mpactl[0m
+[01;32mpadsp[0m
+[01;36mpager[0m
+[01;32mpalimpsest[0m
+[01;32mpalmtopnm[0m
+[01;32mpamcut[0m
+[01;32mpamdeinterlace[0m
+[01;32mpamdice[0m
+[01;32mpamfile[0m
+[01;32mpamoil[0m
+[01;36mpamon[0m
+[01;32mpamstack[0m
+[01;32mpamstretch[0m
+[01;32mpamstretch-gen[0m
+[01;32mpanel-test-applets[0m
+[01;32mpango-querymodules[0m
+[01;32mpango-view[0m
+[01;32mpaperconf[0m
+[01;36mpaplay[0m
+[01;36mparec[0m
+[01;36mparecord[0m
+[01;32mparsechangelog[0m
+[01;32mpartx[0m
+[37;41mpasswd[0m
+[01;32mpaste[0m
+[01;32mpasuspender[0m
+[01;32mpatch[0m
+[01;32mpatgen[0m
+[01;32mpathchk[0m
+[01;32mpax11publish[0m
+[01;32mpbmclean[0m
+[01;32mpbmlife[0m
+[01;32mpbmmake[0m
+[01;32mpbmmask[0m
+[01;32mpbmpage[0m
+[01;32mpbmpscale[0m
+[01;32mpbmreduce[0m
+[01;32mpbmtext[0m
+[01;32mpbmtextps[0m
+[01;32mpbmto10x[0m
+[01;32mpbmtoascii[0m
+[01;32mpbmtoatk[0m
+[01;32mpbmtobbnbg[0m
+[01;32mpbmtocmuwm[0m
+[01;32mpbmtoepsi[0m
+[01;32mpbmtoepson[0m
+[01;32mpbmtog3[0m
+[01;32mpbmtogem[0m
+[01;32mpbmtogo[0m
+[01;32mpbmtoicon[0m
+[01;32mpbmtolj[0m
+[01;32mpbmtomacp[0m
+[01;32mpbmtomda[0m
+[01;32mpbmtomgr[0m
+[01;32mpbmtonokia[0m
+[01;32mpbmtopgm[0m
+[01;32mpbmtopi3[0m
+[01;32mpbmtoplot[0m
+[01;32mpbmtoppa[0m
+[01;32mpbmtopsg3[0m
+[01;32mpbmtoptx[0m
+[01;32mpbmtowbmp[0m
+[01;32mpbmtox10bm[0m
+[01;32mpbmtoxbm[0m
+[01;32mpbmtoybm[0m
+[01;32mpbmtozinc[0m
+[01;32mpbmupc[0m
+[01;32mpcimodules[0m
+[01;32mpcre-config[0m
+[01;32mpcxtoppm[0m
+[01;36mpdb[0m
+[01;36mpdb2.7[0m
+[01;32mpdf2dsc[0m
+[01;32mpdf2ps[0m
+[01;36mpdfatfi[0m
+[01;32mpdfclose[0m
+[01;36mpdfetex[0m
+[01;32mpdffonts[0m
+[01;32mpdfimages[0m
+[01;32mpdfinfo[0m
+[01;36mpdflatex[0m
+[01;32mpdfopen[0m
+[01;32mpdfopt[0m
+[01;32mpdfseparate[0m
+[01;32mpdftex[0m
+[01;32mpdftexi2dvi[0m
+[01;32mpdftocairo[0m
+[01;32mpdftohtml[0m
+[01;32mpdftoppm[0m
+[01;32mpdftops[0m
+[01;32mpdftosrc[0m
+[01;32mpdftotext[0m
+[01;32mpdfunite[0m
+[01;32mpeekfd[0m
+[01;32mperl[0m
+[01;32mperl5.14.2[0m
+[01;32mperlbug[0m
+[01;32mperldoc[0m
+[01;32mperlivp[0m
+[01;32mperlthanks[0m
+[01;32mpf2afm[0m
+[01;32mpfb2pfa[0m
+[01;32mpfbtopfa[0m
+[01;36mpftp[0m
+[01;32mpg[0m
+[01;32mpgawk[0m
+[01;32mpgmbentley[0m
+[01;32mpgmcrater[0m
+[01;32mpgmedge[0m
+[01;32mpgmenhance[0m
+[01;32mpgmhist[0m
+[01;32mpgmkernel[0m
+[01;32mpgmnoise[0m
+[01;36mpgmnorm[0m
+[01;36mpgmoil[0m
+[01;32mpgmramp[0m
+[01;32mpgmslice[0m
+[01;32mpgmtexture[0m
+[01;32mpgmtofs[0m
+[01;32mpgmtolispm[0m
+[01;32mpgmtopbm[0m
+[01;32mpgmtoppm[0m
+[01;32mpgrep[0m
+[01;32mpi1toppm[0m
+[01;32mpi3topbm[0m
+[01;32mpic[0m
+[01;36mpico[0m
+[01;32mpiconv[0m
+[01;32mpilconvert.py[0m
+[01;32mpildriver.py[0m
+[01;32mpilfile.py[0m
+[01;32mpilfont.py[0m
+[01;32mpilprint.py[0m
+[01;32mpinky[0m
+[01;32mpitivi[0m
+[01;32mpjtoppm[0m
+[01;32mpk2bm[0m
+[01;32mpkaction[0m
+[01;32mpkcheck[0m
+[37;41mpkexec[0m
+[01;32mpkg-config[0m
+[01;36mpkill[0m
+[01;32mpktogf[0m
+[01;32mpktype[0m
+[01;32mpl2pm[0m
+[01;32mpldd[0m
+[01;32mplog[0m
+[01;32mpltotf[0m
+[01;32mplymouth-log-viewer[0m
+[01;32mpmap[0m
+[01;32mpm-is-supported[0m
+[01;32mpngtopnm[0m
+[01;32mpnm2ppa[0m
+[01;32mpnmalias[0m
+[01;32mpnmarith[0m
+[01;32mpnmcat[0m
+[01;32mpnmcolormap[0m
+[01;32mpnmcomp[0m
+[01;32mpnmconvol[0m
+[01;32mpnmcrop[0m
+[01;32mpnmcut[0m
+[01;32mpnmdepth[0m
+[01;32mpnmenlarge[0m
+[01;32mpnmfile[0m
+[01;32mpnmflip[0m
+[01;32mpnmgamma[0m
+[01;32mpnmhisteq[0m
+[01;32mpnmhistmap[0m
+[01;32mpnmindex[0m
+[01;36mpnminterp[0m
+[01;36mpnminterp-gen[0m
+[01;32mpnminvert[0m
+[01;32mpnmmargin[0m
+[01;32mpnmmontage[0m
+[01;32mpnmnlfilt[0m
+[01;36mpnmnoraw[0m
+[01;32mpnmnorm[0m
+[01;32mpnmpad[0m
+[01;32mpnmpaste[0m
+[01;32mpnmpsnr[0m
+[01;32mpnmquant[0m
+[01;32mpnmremap[0m
+[01;32mpnmrotate[0m
+[01;32mpnmscale[0m
+[01;32mpnmscalefixed[0m
+[01;32mpnmshear[0m
+[01;32mpnmsmooth[0m
+[01;32mpnmsplit[0m
+[01;32mpnmtile[0m
+[01;32mpnmtoddif[0m
+[01;32mpnmtofiasco[0m
+[01;32mpnmtofits[0m
+[01;32mpnmtojpeg[0m
+[01;32mpnmtopalm[0m
+[01;32mpnmtoplainpnm[0m
+[01;32mpnmtopng[0m
+[01;32mpnmtops[0m
+[01;32mpnmtorast[0m
+[01;32mpnmtorle[0m
+[01;32mpnmtosgi[0m
+[01;32mpnmtosir[0m
+[01;32mpnmtotiff[0m
+[01;32mpnmtotiffcmyk[0m
+[01;32mpnmtoxwd[0m
+[01;32mpo2debconf[0m
+[01;32mpod2html[0m
+[01;32mpod2latex[0m
+[01;32mpod2man[0m
+[01;32mpod2text[0m
+[01;32mpod2usage[0m
+[01;32mpodchecker[0m
+[01;32mpodebconf-display-po[0m
+[01;32mpodebconf-report-po[0m
+[01;32mpodselect[0m
+[01;32mpoff[0m
+[01;32mpon[0m
+[01;32mpooltype[0m
+[01;36mPOST[0m
+[01;32mppdc[0m
+[01;32mppdhtml[0m
+[01;32mppdi[0m
+[01;32mppdmerge[0m
+[01;32mppdpo[0m
+[01;32mpphs[0m
+[01;32mppl-config[0m
+[01;32mppm3d[0m
+[01;32mppmbrighten[0m
+[01;32mppmchange[0m
+[01;32mppmcie[0m
+[01;32mppmcolormask[0m
+[01;32mppmcolors[0m
+[01;32mppmdim[0m
+[01;32mppmdist[0m
+[01;32mppmdither[0m
+[01;32mppmfade[0m
+[01;32mppmflash[0m
+[01;32mppmforge[0m
+[01;32mppmhist[0m
+[01;32mppmlabel[0m
+[01;32mppmmake[0m
+[01;32mppmmix[0m
+[01;36mppmnorm[0m
+[01;32mppmntsc[0m
+[01;32mppmpat[0m
+[01;32mppmquant[0m
+[01;32mppmquantall[0m
+[01;32mppmqvga[0m
+[01;32mppmrainbow[0m
+[01;32mppmrelief[0m
+[01;32mppmshadow[0m
+[01;32mppmshift[0m
+[01;32mppmspread[0m
+[01;32mppmtoacad[0m
+[01;32mppmtobmp[0m
+[01;32mppmtoeyuv[0m
+[01;32mppmtogif[0m
+[01;32mppmtoicr[0m
+[01;32mppmtoilbm[0m
+[01;36mppmtojpeg[0m
+[01;32mppmtoleaf[0m
+[01;32mppmtolj[0m
+[01;32mppmtolss16[0m
+[01;32mppmtomap[0m
+[01;32mppmtomitsu[0m
+[01;32mppmtompeg[0m
+[01;32mppmtoneo[0m
+[01;32mppmtopcx[0m
+[01;32mppmtopgm[0m
+[01;32mppmtopi1[0m
+[01;32mppmtopict[0m
+[01;32mppmtopj[0m
+[01;32mppmtopuzz[0m
+[01;32mppmtorgb3[0m
+[01;32mppmtosixel[0m
+[01;32mppmtotga[0m
+[01;32mppmtouil[0m
+[01;32mppmtowinicon[0m
+[01;32mppmtoxpm[0m
+[01;32mppmtoyuv[0m
+[01;32mppmtoyuvsplit[0m
+[01;32mppmtv[0m
+[01;32mpr[0m
+[01;32mprecat[0m
+[01;32mpreconv[0m
+[01;32mprename[0m
+[01;32mpreunzip[0m
+[01;32mprezip[0m
+[01;32mprezip-bin[0m
+[01;36mprint[0m
+[01;32mprintafm[0m
+[01;32mprintenv[0m
+[01;32mprinterbanner[0m
+[01;32mprinter-profile[0m
+[01;32mprintf[0m
+[01;32mprotoc[0m
+[01;32mprove[0m
+[01;32mprtstat[0m
+[01;32mprune[0m
+[01;32mps2ascii[0m
+[01;32mps2epsi[0m
+[01;32mps2frag[0m
+[01;32mps2pdf[0m
+[01;32mps2pdf12[0m
+[01;32mps2pdf13[0m
+[01;32mps2pdf14[0m
+[01;32mps2pdfwr[0m
+[01;32mps2pk[0m
+[01;32mps2ps[0m
+[01;32mps2ps2[0m
+[01;36mps2txt[0m
+[01;32mpsed[0m
+[01;36mpsfaddtable[0m
+[01;36mpsfgettable[0m
+[01;36mpsfstriptable[0m
+[01;32mpsfxtable[0m
+[01;32mpsidtopgm[0m
+[01;32mpslatex[0m
+[01;32mpstopnm[0m
+[01;32mpstree[0m
+[01;36mpstree.x11[0m
+[01;32mpstruct[0m
+[01;32mptar[0m
+[01;32mptardiff[0m
+[01;32mptargrep[0m
+[01;32mptx[0m
+[01;32mpulseaudio[0m
+[01;32mpurple-remote[0m
+[01;32mpurple-send[0m
+[01;32mpurple-send-async[0m
+[01;32mpurple-url-handler[0m
+[01;32mpwdx[0m
+[01;32mpxelinux-options[0m
+[01;32mpy3_compilefiles[0m
+[01;32mpycentral[0m
+[01;32mpyclean[0m
+[01;32mpycompile[0m
+[01;32mpy_compilefiles[0m
+[01;36mpydoc[0m
+[01;32mpydoc2.7[0m
+[01;36mpygettext[0m
+[01;32mpygettext2.7[0m
+[01;32mpyhtmlizer[0m
+[01;36mpython[0m
+[01;36mpython2[0m
+[01;32mpython2.7[0m
+[01;36mpyversions[0m
+[01;32mqdbus[0m
+[01;32mqpdldecode[0m
+[01;32mqrttoppm[0m
+[01;32mquilt[0m
+[01;32mquirks-handler[0m
+[01;32mranlib[0m
+[01;32mrar[0m
+[01;32mrarian-example[0m
+[01;32mrarian-sk-config[0m
+[01;32mrarian-sk-extract[0m
+[01;32mrarian-sk-gen-uuid[0m
+[01;32mrarian-sk-get-cl[0m
+[01;32mrarian-sk-get-content-list[0m
+[01;32mrarian-sk-get-extended-content-list[0m
+[01;32mrarian-sk-get-scripts[0m
+[01;32mrarian-sk-install[0m
+[01;32mrarian-sk-migrate[0m
+[01;32mrarian-sk-preinstall[0m
+[01;32mrarian-sk-rebuild[0m
+[01;32mrarian-sk-update[0m
+[01;32mrasttopnm[0m
+[01;32mrawtopgm[0m
+[01;32mrawtoppm[0m
+[01;36mrcp[0m
+[01;32mrctest[0m
+[01;32mrdesktop[0m
+[01;32mrdfpipe[0m
+[01;32mrdiffdir[0m
+[01;32mreadelf[0m
+[01;32mreadom[0m
+[01;32mrealpath[0m
+[01;32mrebuild-gcj-db[0m
+[01;32mrecode-sr-latin[0m
+[01;32mrecountdiff[0m
+[01;36mred[0m
+[01;32mrediff[0m
+[01;32mremmina[0m
+[01;36mrename[0m
+[01;32mrename.ul[0m
+[01;32mrenice[0m
+[01;32mreport-hw[0m
+[01;36mreset[0m
+[01;32mresize[0m
+[01;32mresizecons[0m
+[01;32mrev[0m
+[01;32mrfcomm[0m
+[01;32mrgb3toppm[0m
+[01;32mrgrep[0m
+[01;32mrhythmbox[0m
+[01;32mrhythmbox-client[0m
+[01;32mrletopnm[0m
+[01;36mrlogin[0m
+[01;36mrmic[0m
+[01;36mrmid[0m
+[01;36mrmiregistry[0m
+[01;32mroutef[0m
+[01;32mroutel[0m
+[01;32mrpcclient[0m
+[01;32mrpcgen[0m
+[01;32mrpl8[0m
+[01;36mrsh[0m
+[01;32mrstart[0m
+[01;32mrstartd[0m
+[01;32mrsync[0m
+[01;36mrtstat[0m
+[01;32mrubibtex[0m
+[01;32mrumakeindex[0m
+[01;32mruncon[0m
+[01;36mrun_erl[0m
+[01;32mrun-mailcap[0m
+[01;32mruntest[0m
+[01;32mrun-with-aspell[0m
+[01;36mrview[0m
+[01;36mrvim[0m
+[01;32ms2p[0m
+[01;32msane-find-scanner[0m
+[01;32msavelog[0m
+[01;32msbigtopgm[0m
+[01;32mscanimage[0m
+[01;32msccmap[0m
+[01;32mscp[0m
+[01;32mscp-dbus-service[0m
+[30;43mscreen[0m
+[01;32mscreendump[0m
+[01;32mscript[0m
+[01;32mscriptreplay[0m
+[01;36mscrollkeeper-config[0m
+[01;36mscrollkeeper-extract[0m
+[01;36mscrollkeeper-gen-seriesid[0m
+[01;36mscrollkeeper-get-cl[0m
+[01;36mscrollkeeper-get-content-list[0m
+[01;36mscrollkeeper-get-extended-content-list[0m
+[01;36mscrollkeeper-get-index-from-docpath[0m
+[01;36mscrollkeeper-get-toc-from-docpath[0m
+[01;36mscrollkeeper-get-toc-from-id[0m
+[01;36mscrollkeeper-install[0m
+[01;36mscrollkeeper-preinstall[0m
+[01;36mscrollkeeper-rebuilddb[0m
+[01;36mscrollkeeper-uninstall[0m
+[01;36mscrollkeeper-update[0m
+[01;32msctp_darn[0m
+[01;32msctp_status[0m
+[01;32msctp_test[0m
+[01;32msdiff[0m
+[01;32msdptool[0m
+[01;32mseahorse[0m
+[01;36msee[0m
+[01;32mselect-default-iwrap[0m
+[01;32mselect-editor[0m
+[01;32msensible-browser[0m
+[01;32msensible-editor[0m
+[01;32msensible-pager[0m
+[01;32msensors[0m
+[01;32msensors-conf-convert[0m
+[01;32mseq[0m
+[01;36mserialver[0m
+[01;36mservice[0m
+[01;32msession-installer[0m
+[01;32msessreg[0m
+[01;32msetarch[0m
+[01;36msetfacl[0m
+[01;32msetkeycodes[0m
+[01;32msetleds[0m
+[01;32msetlogcons[0m
+[01;32msetmetamode[0m
+[01;32msetpci[0m
+[01;32msetsid[0m
+[01;32msetterm[0m
+[01;32msetxkbmap[0m
+[01;36msfdp[0m
+[01;32msftp[0m
+[01;36msg[0m
+[01;32msgitopnm[0m
+[01;32msha1pass[0m
+[01;32msha1sum[0m
+[01;32msha224sum[0m
+[01;32msha256sum[0m
+[01;32msha384sum[0m
+[01;32msha512sum[0m
+[01;32mshar[0m
+[01;32mshares-admin[0m
+[01;32mshasum[0m
+[01;32mshotwell[0m
+[01;32mshotwell-video-thumbnailer[0m
+[01;32mshowconsolefont[0m
+[01;32mshowfont[0m
+[01;32mshowkey[0m
+[01;32mshowrgb[0m
+[01;32mshred[0m
+[01;32mshuf[0m
+[01;36msimpdftex[0m
+[01;32msimple-scan[0m
+[01;32msirtopnm[0m
+[01;32msize[0m
+[01;32mskill[0m
+[01;32mslabtop[0m
+[01;32msldtoppm[0m
+[01;36mslogin[0m
+[01;32mslxdecode[0m
+[01;32msmartdimmer[0m
+[01;32msmbcacls[0m
+[01;32msmbclient[0m
+[01;32msmbcquotas[0m
+[01;32msmbget[0m
+[01;32msmbpasswd[0m
+[01;32msmbspool[0m
+[01;32msmbtar[0m
+[01;32msmbtree[0m
+[01;32msmproxy[0m
+[01;36msnice[0m
+[01;32msoelim[0m
+[01;36msoffice[0m
+[01;36msoftware-center[0m
+[01;36msoftware-center-gtk3[0m
+[01;32msoftware-properties-gtk[0m
+[01;32msort[0m
+[01;32msotruss[0m
+[01;32mspctoppm[0m
+[01;32mspd-conf[0m
+[01;32mspd-say[0m
+[01;32mspeaker-test[0m
+[01;32mspeech-dispatcher[0m
+[01;32msplain[0m
+[01;32msplit[0m
+[01;32msplitdiff[0m
+[01;32msplitfont[0m
+[01;32msprof[0m
+[01;32msputoppm[0m
+[01;32mssh[0m
+[01;32mssh-add[0m
+[30;43mssh-agent[0m
+[01;32mssh-argv0[0m
+[01;36mssh-askpass[0m
+[01;32mssh-copy-id[0m
+[01;32mssh-keygen[0m
+[01;32mssh-keyscan[0m
+[01;32mssh-vulnkey[0m
+[01;32mst4topgm[0m
+[01;32mstardict[0m
+[01;36mstart_embedded[0m
+[01;32mstart-pulseaudio-kde[0m
+[01;32mstart-pulseaudio-x11[0m
+[01;32mstartx[0m
+[01;32mstat[0m
+[01;32mstdbuf[0m
+[01;32mstrace[0m
+[01;32mstream[0m
+[01;32mstrings[0m
+[01;32mstrip[0m
+[37;41msudo[0m
+[37;41msudoedit[0m
+[01;32msudoreplay[0m
+[01;32msum[0m
+[01;32msynaptic-pkexec[0m
+[01;32msynclient[0m
+[01;32msynctex[0m
+[01;32msyndaemon[0m
+[01;32msyslinux[0m
+[01;32msyslinux2ansi[0m
+[01;32msyslinux-legacy[0m
+[01;32msystem-config-printer[0m
+[01;32msystem-config-printer-applet[0m
+[01;32mtabs[0m
+[01;32mtac[0m
+[01;32mtail[0m
+[01;32mtangle[0m
+[01;32mtap2deb[0m
+[01;32mtap2rpm[0m
+[01;32mtapconvert[0m
+[01;32mtasksel[0m
+[01;32mtaskset[0m
+[01;32mtbl[0m
+[01;32mtcdialog[0m
+[01;36mtclsh[0m
+[01;32mtclsh8.4[0m
+[01;32mtclsh8.5[0m
+[01;32mteckit_compile[0m
+[01;32mtee[0m
+[01;32mtelepathy-indicator[0m
+[01;36mtelnet[0m
+[01;32mtelnet.netkit[0m
+[01;32mtest[0m
+[01;36mtestparm[0m
+[01;32mtestparm.samba3[0m
+[01;32mtex[0m
+[01;32mtexconfig[0m
+[01;32mtexconfig-dialog[0m
+[01;32mtexconfig-sys[0m
+[01;36mtexdoc[0m
+[01;36mtexdoctk[0m
+[01;36mtexhash[0m
+[01;32mtexi2dvi[0m
+[01;32mtexi2pdf[0m
+[01;32mtexindex[0m
+[01;32mtexlinks[0m
+[01;36mtexlua[0m
+[01;36mtexluac[0m
+[01;32mtftopl[0m
+[01;32mtgatoppm[0m
+[01;32mtgz[0m
+[01;32mthinkjettopbm[0m
+[01;36mthunderbird[0m
+[01;32mtic[0m
+[01;32mtie[0m
+[01;32mtifftopnm[0m
+[01;32mtime[0m
+[01;32mtimeout[0m
+[01;32mtload[0m
+[01;32mtmux[0m
+[01;36mtnameserv[0m
+[01;32mtoe[0m
+[01;32mtomboy[0m
+[01;32mtop[0m
+[01;32mtoshset[0m
+[01;32mtotem[0m
+[01;32mtotem-audio-preview[0m
+[01;32mtotem-video-indexer[0m
+[01;32mtotem-video-thumbnailer[0m
+[01;36mtouch[0m
+[01;32mtpic2pdftex[0m
+[01;32mtput[0m
+[01;32mtr[0m
+[01;32mtracepath[0m
+[01;32mtracepath6[0m
+[01;36mtraceroute6[0m
+[37;41mtraceroute6.iputils[0m
+[01;32mtransmission-gtk[0m
+[01;32mtred[0m
+[01;32mtrial[0m
+[01;32mtroff[0m
+[01;32mtruncate[0m
+[01;32mtset[0m
+[01;32mtsort[0m
+[01;32mttf2afm[0m
+[01;32mttf2pk[0m
+[01;32mttf2tfm[0m
+[01;32mttfdump[0m
+[01;32mtty[0m
+[01;32mtwistd[0m
+[01;36mtwopi[0m
+[01;32mtzselect[0m
+[01;32mu1couchquery[0m
+[01;32mu1oauthrequest[0m
+[01;32mu1sdtool[0m
+[01;36mubuntu-bug[0m
+[01;32mubuntuone-control-panel-qt[0m
+[01;32mubuntuone-installer[0m
+[01;32mubuntuone-launch[0m
+[01;32mubuntu-support-status[0m
+[01;32mucf[0m
+[01;32mucfq[0m
+[01;32mucfr[0m
+[01;32mucs2any[0m
+[01;32mudisks[0m
+[01;32mudisks-tcp-bridge[0m
+[01;32mul[0m
+[01;32mumax_pp[0m
+[01;32munattended-upgrade[0m
+[01;36munattended-upgrades[0m
+[01;32munexpand[0m
+[01;32munflatten[0m
+[01;32municode_stop[0m
+[01;32muniq[0m
+[01;32munity[0m
+[01;32munity-2d-panel[0m
+[01;32munity-2d-shell[0m
+[01;32munity-2d-spread[0m
+[01;32munlink[0m
+[01;36munlzma[0m
+[01;36munrar[0m
+[01;32munrar-nonfree[0m
+[01;32munshar[0m
+[01;32munshare[0m
+[01;32munwrapdiff[0m
+[01;36munxz[0m
+[01;32munzip[0m
+[01;32munzipsfx[0m
+[01;32mupdate-alternatives[0m
+[01;36mupdatedb[0m
+[01;32mupdatedb.mlocate[0m
+[01;32mupdate-desktop-database[0m
+[01;36mupdate-fmtutil[0m
+[01;32mupdate-fontlang[0m
+[01;32mupdate-gconf-defaults[0m
+[01;36mupdate-language[0m
+[01;36mupdate-language-dat[0m
+[01;36mupdate-language-def[0m
+[01;32mupdate-manager[0m
+[01;32mupdate-mime-database[0m
+[01;32mupdate-mime-database.real[0m
+[01;32mupdate-notifier[0m
+[01;32mupdate-pciids[0m
+[01;32mupdate-perl-sax-parsers[0m
+[01;36mupdate-updmap[0m
+[01;32mupdmap[0m
+[01;32mupdmap-sys[0m
+[01;32mupower[0m
+[01;32muptime[0m
+[01;32musb-creator-gtk[0m
+[01;32musb-devices[0m
+[01;32musbhid-dump[0m
+[01;32musb_printerid[0m
+[01;32musers[0m
+[01;32musers-admin[0m
+[01;32muudecode[0m
+[01;32muuencode[0m
+[01;32muuidgen[0m
+[01;32muxterm[0m
+[01;32muz[0m
+[01;32mvftovp[0m
+[01;36mvi[0m
+[01;36mview[0m
+[01;32mviewres[0m
+[01;36mvim[0m
+[01;32mvim.basic[0m
+[01;36mvimdiff[0m
+[01;32mvimdot[0m
+[01;32mvim.tiny[0m
+[01;32mvimtutor[0m
+[01;32mvinagre[0m
+[01;32mvino-passwd[0m
+[01;32mvino-preferences[0m
+[01;32mvlna[0m
+[01;32mvmstat[0m
+[01;32mvmwarectrl[0m
+[01;32mvolname[0m
+[01;32mvptovf[0m
+[01;36mw[0m
+[01;32mw3m[0m
+[01;32mw3mman[0m
+[30;43mwall[0m
+[01;32mwatch[0m
+[01;32mwbmptopbm[0m
+[01;32mwc[0m
+[01;32mweave[0m
+[01;32mwftopfa[0m
+[01;32mwget[0m
+[01;32mwhatis[0m
+[01;32mwhereis[0m
+[01;36mwhich[0m
+[01;32mwho[0m
+[01;32mwhoami[0m
+[01;32mwhois[0m
+[01;32mwhoopsie[0m
+[01;32mwhoopsie-preferences[0m
+[01;32mwinicontoppm[0m
+[01;36mwish[0m
+[01;32mwish8.4[0m
+[01;32mwithsctp[0m
+[01;32mwodim[0m
+[01;32mword-list-compress[0m
+[01;32mwpa_passphrase[0m
+[01;32mw.procps[0m
+[01;36mwrite[0m
+[01;36mwww-browser[0m
+[37;41mX[0m
+[01;36mX11[0m
+[01;32mx11perf[0m
+[01;32mx11perfcomp[0m
+[01;32mxargs[0m
+[01;32mxauth[0m
+[01;32mxbiff[0m
+[01;32mxbmtopbm[0m
+[01;32mxbrlapi[0m
+[01;32mxcalc[0m
+[01;32mxclipboard[0m
+[01;32mxclock[0m
+[01;32mxcmsdb[0m
+[01;32mxconsole[0m
+[01;32mxcursorgen[0m
+[01;32mxcutsel[0m
+[01;32mxdg-desktop-icon[0m
+[01;32mxdg-desktop-menu[0m
+[01;32mxdg-email[0m
+[01;32mxdg-icon-resource[0m
+[01;32mxdg-mime[0m
+[01;32mxdg-open[0m
+[01;32mxdg-screensaver[0m
+[01;32mxdg-settings[0m
+[01;32mxdg-user-dir[0m
+[01;32mxdg-user-dirs-gtk-update[0m
+[01;32mxdg-user-dirs-update[0m
+[01;32mxdiagnose[0m
+[01;32mxditview[0m
+[01;32mxdpyinfo[0m
+[01;32mxdriinfo[0m
+[01;32mxdvi[0m
+[01;36mxdvi.bin[0m
+[01;32mxdvipdfmx[0m
+[01;32mxdvi-xaw[0m
+[01;32mxedit[0m
+[01;32mxetex[0m
+[01;32mxev[0m
+[01;32mxeyes[0m
+[01;32mxfd[0m
+[01;32mxfontsel[0m
+[01;32mxfsinfo[0m
+[01;32mxgamma[0m
+[01;32mxgc[0m
+[01;32mxgettext[0m
+[01;32mxhost[0m
+[01;32mximtoppm[0m
+[01;32mxinit[0m
+[01;32mxinput[0m
+[01;32mxkbbell[0m
+[01;32mxkbcomp[0m
+[01;32mxkbevd[0m
+[01;32mxkbprint[0m
+[01;32mxkbvleds[0m
+[01;32mxkbwatch[0m
+[01;32mxkeystone[0m
+[01;32mxkill[0m
+[01;32mxload[0m
+[01;32mxlogo[0m
+[01;32mxlsatoms[0m
+[01;32mxlsclients[0m
+[01;32mxlsfonts[0m
+[01;32mxmag[0m
+[01;32mxman[0m
+[01;32mxmessage[0m
+[01;32mxml2ag[0m
+[01;32mxml2po[0m
+[01;32mxmlcatalog[0m
+[01;32mxmllint[0m
+[01;32mxmodmap[0m
+[01;32mxmore[0m
+[01;32mXorg[0m
+[01;32mxpath[0m
+[01;32mxpci[0m
+[01;32mxpmtoppm[0m
+[01;32mxprop[0m
+[01;32mxqxdecode[0m
+[01;32mxrandr[0m
+[01;32mxrandr-tool[0m
+[01;32mxrdb[0m
+[01;32mxrefresh[0m
+[01;32mxscreensaver-getimage[0m
+[01;32mxscreensaver-getimage-file[0m
+[01;32mxscreensaver-getimage-video[0m
+[01;32mxscreensaver-gl-helper[0m
+[01;32mxscreensaver-text[0m
+[01;36mx-session-manager[0m
+[01;32mxset[0m
+[01;32mxsetmode[0m
+[01;32mxsetpointer[0m
+[01;32mxsetroot[0m
+[01;32mxsetwacom[0m
+[01;32mxsltproc[0m
+[01;32mxsm[0m
+[01;32mxstdcmap[0m
+[01;32mxsubpp[0m
+[01;32mxterm[0m
+[01;36mx-terminal-emulator[0m
+[01;32mxvidtune[0m
+[01;32mxvinfo[0m
+[01;32mxvminitoppm[0m
+[01;32mxwd[0m
+[01;32mxwdtopnm[0m
+[01;36mx-window-manager[0m
+[01;32mxwininfo[0m
+[01;32mxwud[0m
+[01;36mx-www-browser[0m
+[01;32mxxd[0m
+[01;32mxz[0m
+[01;36mxzcat[0m
+[01;36mxzcmp[0m
+[01;32mxzdiff[0m
+[01;36mxzegrep[0m
+[01;36mxzfgrep[0m
+[01;32mxzgrep[0m
+[01;32mxzless[0m
+[01;32mxzmore[0m
+[01;36myacc[0m
+[01;32mybmtopbm[0m
+[01;32myelp[0m
+[01;32myes[0m
+[01;32myuvsplittoppm[0m
+[01;32myuvtoppm[0m
+[01;32mzdump[0m
+[01;32mzeisstopnm[0m
+[01;32mzeitgeist-daemon[0m
+[01;32mzeitgeist-datahub[0m
+[01;32mzenity[0m
+[01;32mzip[0m
+[01;32mzipcloak[0m
+[01;32mzipgrep[0m
+[01;32mzipinfo[0m
+[01;32mzipnote[0m
+[01;32mzipsplit[0m
+[01;32mzjsdecode[0m
+[01;32mzsoelim[0m
+]0;mc@Mc: /usr/binmc@Mc:/usr/bin$ cd opencd
+bash: cd: opencd: 没有那个文件或目录
+]0;mc@Mc: /usr/binmc@Mc:/usr/bin$ cd opencdocd
+bash: cd: openocd: 不是目录
+]0;mc@Mc: /usr/binmc@Mc:/usr/bin$ cd openocd[1Pcdls[Kcd /usr/bin/whereis openocd[3Pfind[C[C[C[C[C[C[C[C[3@whereis[C[C[C[C[C[C[C[C
+openocd: /usr/bin/openocd /usr/lib/openocd /usr/bin/X11/openocd /usr/share/openocd /usr/share/man/man1/openocd.1.gz
+]0;mc@Mc: /usr/binmc@Mc:/usr/bin$ cd /etc
+]0;mc@Mc: /etcmc@Mc:/etc$ s
+s: command not found
+]0;mc@Mc: /etcmc@Mc:/etc$ ;s[K[Kls
+[0m[01;34macpi[0m                           [01;34mgre.d[0m                passwd-
+adduser.conf                   [01;34mgroff[0m                [01;34mpcmcia[0m
+[01;34malternatives[0m                   group                [01;34mperl[0m
+anacrontab                     group-               [01;34mpkcs11[0m
+apg.conf                       [01;34mgrub.d[0m               [01;34mpm[0m
+[01;34mapm[0m                            gshadow              pnm2ppa.conf
+[01;34mapparmor[0m                       gshadow-             [01;34mpolkit-1[0m
+[01;34mapparmor.d[0m                     [01;34mgtk-2.0[0m              popularity-contest.conf
+[01;34mapport[0m                         [01;34mgtk-3.0[0m              [01;34mppp[0m
+[01;34mapt[0m                            [01;34mhal[0m                  [01;36mprintcap[0m
+at.deny                        hdparm.conf          profile
+[01;36mati[0m                            host.conf            [01;34mprofile.d[0m
+[01;34mat-spi2[0m                        hostname             protocols
+[01;34mavahi[0m                          hosts                [01;34mpulse[0m
+bash.bashrc                    hosts.allow          [01;34mpython[0m
+bash_completion                hosts.deny           [01;34mpython2.6[0m
+[01;34mbash_completion.d[0m              [01;34mhp[0m                   [01;34mpython2.7[0m
+bindresvport.blacklist         [01;34mifplugd[0m              rarfiles.lst
+blkid.conf                     [01;34mImageMagick[0m          [01;34mrc0.d[0m
+[40;31;01mblkid.tab[0m                      [01;34minit[0m                 [01;34mrc1.d[0m
+[01;34mbluetooth[0m                      [01;34minit.d[0m               [01;34mrc2.d[0m
+bogofilter.cf                  [01;34minitramfs-tools[0m      [01;34mrc3.d[0m
+[01;34mbonobo-activation[0m              inputrc              [01;34mrc4.d[0m
+brlapi.key                     [01;34minsserv[0m              [01;34mrc5.d[0m
+[01;34mbrltty[0m                         insserv.conf         [01;34mrc6.d[0m
+brltty.conf                    [01;34minsserv.conf.d[0m       [01;32mrc.local[0m
+[01;34mbyobu[0m                          [01;34miproute2[0m             [01;34mrcS.d[0m
+[01;34mca-certificates[0m                issue                request-key.conf
+ca-certificates.conf           issue.net            [01;34mresolvconf[0m
+ca-certificates.conf.dpkg-old  [01;34mjava[0m                 [01;36mresolv.conf[0m
+[01;34mcalendar[0m                       [01;34mkbd[0m                  [01;32mrmt[0m
+[01;34mchatscripts[0m                    [01;34mkernel[0m               rpc
+[01;34mcheckbox.d[0m                     kernel-img.conf      rsyslog.conf
+colord.conf                    kerneloops.conf      [01;34mrsyslog.d[0m
+[01;34mcompizconfig[0m                   [01;34mldap[0m                 [01;34msamba[0m
+[01;34mcomputer-janitor.d[0m             ld.so.cache          [01;34msane.d[0m
+[01;34mConsoleKit[0m                     ld.so.conf           screenrc
+[01;34mconsole-setup[0m                  [01;34mld.so.conf.d[0m         securetty
+[01;34mcouchdb[0m                        legal                [01;34msecurity[0m
+[01;34mcron.d[0m                         lftp.conf            sensors3.conf
+[01;34mcron.daily[0m                     [01;34mlibnl-3[0m              [01;34msensors.d[0m
+[01;34mcron.hourly[0m                    [01;34mlibpaper.d[0m           services
+[01;34mcron.monthly[0m                   [01;34mlibreoffice[0m          [01;34msgml[0m
+crontab                        [01;34mlightdm[0m              shadow
+[01;34mcron.weekly[0m                    locale.alias         shadow-
+crypttab                       localtime            shells
+[01;34mcups[0m                           [01;34mlogcheck[0m             [01;34mskel[0m
+[01;34mcupshelpers[0m                    login.defs           [01;34msnmp[0m
+[01;34mdbus-1[0m                         logrotate.conf       [01;34msound[0m
+[01;34mdconf[0m                          [01;34mlogrotate.d[0m          [01;34mspeech-dispatcher[0m
+debconf.conf                   [01;34mlsb-base[0m             [01;34mssh[0m
+debian_version                 lsb-base-logging.sh  [01;34mssl[0m
+[01;34mdefault[0m                        lsb-release          sudoers
+[01;34mdefoma[0m                         ltrace.conf          [01;34msudoers.d[0m
+[01;34mdejagnu[0m                        magic                sysctl.conf
+deluser.conf                   magic.mime           [01;34msysctl.d[0m
+[01;34mdepmod.d[0m                       mailcap              [01;34msystemd[0m
+[01;34mdhcp[0m                           mailcap.order        [01;34mterminfo[0m
+[01;34mdhcp3[0m                          manpath.config       [01;34mtexmf[0m
+[01;34mdictionaries-common[0m            mime.types           [01;34mthunderbird[0m
+[01;34mdkms[0m                           mke2fs.conf          timezone
+[01;34mdoc-base[0m                       [01;34mmodprobe.d[0m           ts.conf
+[01;34mdpkg[0m                           modules              ucf.conf
+[01;34memacs[0m                          [01;34mmono[0m                 [01;34mudev[0m
+environment                    [01;36mmotd[0m                 [01;34mufw[0m
+[01;34mesound[0m                         mtab                 updatedb.conf
+[01;34mfirefox[0m                        mtab.fuselock        [01;34mupdate-manager[0m
+[01;34mfirefox-3.0[0m                    mtools.conf          [01;34mupdate-motd.d[0m
+[01;34mfonts[0m                          [01;34mmysql[0m                [01;34mupdate-notifier[0m
+[01;34mfoomatic[0m                       nanorc               [01;34mUPower[0m
+fstab                          netscsid.conf        usb_modeswitch.conf
+[01;34mfstab.d[0m                        [01;34mnetwork[0m              [01;34musb_modeswitch.d[0m
+fuse.conf                      [01;34mNetworkManager[0m       [01;34mvim[0m
+gai.conf                       networks             [01;36mvtrgb[0m
+[01;34mgamin[0m                          [01;34mnewt[0m                 [01;34mw3m[0m
+[01;34mgconf[0m                          nsswitch.conf        wgetrc
+[01;34mgdb[0m                            [01;34mobex-data-server[0m     wodim.conf
+[01;34mgdm[0m                            [01;34mOpenCL[0m               [01;34mwpa_supplicant[0m
+[01;34mghostscript[0m                    [01;34mopenoffice[0m           [01;34mX11[0m
+[01;34mginn[0m                           [01;34mopt[0m                  [01;34mxdg[0m
+[01;34mgnome[0m                          os-release           [01;34mxml[0m
+[01;34mgnome-app-install[0m              pam.conf             [01;34mxul-ext[0m
+[01;34mgnome-settings-daemon[0m          [01;34mpam.d[0m                [01;34mxulrunner-1.9.2[0m
+[01;34mgnome-system-tools[0m             [01;34mpango[0m                zsh_command_not_found
+[01;34mgnome-vfs-2.0[0m                  papersize
+gnome-vfs-mime-magic           passwd
+]0;mc@Mc: /etcmc@Mc:/etc$ cd op
+openoffice/ opt/        
+]0;mc@Mc: /etcmc@Mc:/etc$ cd op
+openoffice/ opt/        
+]0;mc@Mc: /etcmc@Mc:/etc$ cd openoffice/
+]0;mc@Mc: /etc/openofficemc@Mc:/etc/openoffice$ ls
+psprint.conf  sofficerc  soffice.sh
+]0;mc@Mc: /etc/openofficemc@Mc:/etc/openoffice$ ls[K[Kcd[K[Kl[Kcd ..
+]0;mc@Mc: /etcmc@Mc:/etc$ ls
+[0m[01;34macpi[0m                           [01;34mgre.d[0m                passwd-
+adduser.conf                   [01;34mgroff[0m                [01;34mpcmcia[0m
+[01;34malternatives[0m                   group                [01;34mperl[0m
+anacrontab                     group-               [01;34mpkcs11[0m
+apg.conf                       [01;34mgrub.d[0m               [01;34mpm[0m
+[01;34mapm[0m                            gshadow              pnm2ppa.conf
+[01;34mapparmor[0m                       gshadow-             [01;34mpolkit-1[0m
+[01;34mapparmor.d[0m                     [01;34mgtk-2.0[0m              popularity-contest.conf
+[01;34mapport[0m                         [01;34mgtk-3.0[0m              [01;34mppp[0m
+[01;34mapt[0m                            [01;34mhal[0m                  [01;36mprintcap[0m
+at.deny                        hdparm.conf          profile
+[01;36mati[0m                            host.conf            [01;34mprofile.d[0m
+[01;34mat-spi2[0m                        hostname             protocols
+[01;34mavahi[0m                          hosts                [01;34mpulse[0m
+bash.bashrc                    hosts.allow          [01;34mpython[0m
+bash_completion                hosts.deny           [01;34mpython2.6[0m
+[01;34mbash_completion.d[0m              [01;34mhp[0m                   [01;34mpython2.7[0m
+bindresvport.blacklist         [01;34mifplugd[0m              rarfiles.lst
+blkid.conf                     [01;34mImageMagick[0m          [01;34mrc0.d[0m
+[40;31;01mblkid.tab[0m                      [01;34minit[0m                 [01;34mrc1.d[0m
+[01;34mbluetooth[0m                      [01;34minit.d[0m               [01;34mrc2.d[0m
+bogofilter.cf                  [01;34minitramfs-tools[0m      [01;34mrc3.d[0m
+[01;34mbonobo-activation[0m              inputrc              [01;34mrc4.d[0m
+brlapi.key                     [01;34minsserv[0m              [01;34mrc5.d[0m
+[01;34mbrltty[0m                         insserv.conf         [01;34mrc6.d[0m
+brltty.conf                    [01;34minsserv.conf.d[0m       [01;32mrc.local[0m
+[01;34mbyobu[0m                          [01;34miproute2[0m             [01;34mrcS.d[0m
+[01;34mca-certificates[0m                issue                request-key.conf
+ca-certificates.conf           issue.net            [01;34mresolvconf[0m
+ca-certificates.conf.dpkg-old  [01;34mjava[0m                 [01;36mresolv.conf[0m
+[01;34mcalendar[0m                       [01;34mkbd[0m                  [01;32mrmt[0m
+[01;34mchatscripts[0m                    [01;34mkernel[0m               rpc
+[01;34mcheckbox.d[0m                     kernel-img.conf      rsyslog.conf
+colord.conf                    kerneloops.conf      [01;34mrsyslog.d[0m
+[01;34mcompizconfig[0m                   [01;34mldap[0m                 [01;34msamba[0m
+[01;34mcomputer-janitor.d[0m             ld.so.cache          [01;34msane.d[0m
+[01;34mConsoleKit[0m                     ld.so.conf           screenrc
+[01;34mconsole-setup[0m                  [01;34mld.so.conf.d[0m         securetty
+[01;34mcouchdb[0m                        legal                [01;34msecurity[0m
+[01;34mcron.d[0m                         lftp.conf            sensors3.conf
+[01;34mcron.daily[0m                     [01;34mlibnl-3[0m              [01;34msensors.d[0m
+[01;34mcron.hourly[0m                    [01;34mlibpaper.d[0m           services
+[01;34mcron.monthly[0m                   [01;34mlibreoffice[0m          [01;34msgml[0m
+crontab                        [01;34mlightdm[0m              shadow
+[01;34mcron.weekly[0m                    locale.alias         shadow-
+crypttab                       localtime            shells
+[01;34mcups[0m                           [01;34mlogcheck[0m             [01;34mskel[0m
+[01;34mcupshelpers[0m                    login.defs           [01;34msnmp[0m
+[01;34mdbus-1[0m                         logrotate.conf       [01;34msound[0m
+[01;34mdconf[0m                          [01;34mlogrotate.d[0m          [01;34mspeech-dispatcher[0m
+debconf.conf                   [01;34mlsb-base[0m             [01;34mssh[0m
+debian_version                 lsb-base-logging.sh  [01;34mssl[0m
+[01;34mdefault[0m                        lsb-release          sudoers
+[01;34mdefoma[0m                         ltrace.conf          [01;34msudoers.d[0m
+[01;34mdejagnu[0m                        magic                sysctl.conf
+deluser.conf                   magic.mime           [01;34msysctl.d[0m
+[01;34mdepmod.d[0m                       mailcap              [01;34msystemd[0m
+[01;34mdhcp[0m                           mailcap.order        [01;34mterminfo[0m
+[01;34mdhcp3[0m                          manpath.config       [01;34mtexmf[0m
+[01;34mdictionaries-common[0m            mime.types           [01;34mthunderbird[0m
+[01;34mdkms[0m                           mke2fs.conf          timezone
+[01;34mdoc-base[0m                       [01;34mmodprobe.d[0m           ts.conf
+[01;34mdpkg[0m                           modules              ucf.conf
+[01;34memacs[0m                          [01;34mmono[0m                 [01;34mudev[0m
+environment                    [01;36mmotd[0m                 [01;34mufw[0m
+[01;34mesound[0m                         mtab                 updatedb.conf
+[01;34mfirefox[0m                        mtab.fuselock        [01;34mupdate-manager[0m
+[01;34mfirefox-3.0[0m                    mtools.conf          [01;34mupdate-motd.d[0m
+[01;34mfonts[0m                          [01;34mmysql[0m                [01;34mupdate-notifier[0m
+[01;34mfoomatic[0m                       nanorc               [01;34mUPower[0m
+fstab                          netscsid.conf        usb_modeswitch.conf
+[01;34mfstab.d[0m                        [01;34mnetwork[0m              [01;34musb_modeswitch.d[0m
+fuse.conf                      [01;34mNetworkManager[0m       [01;34mvim[0m
+gai.conf                       networks             [01;36mvtrgb[0m
+[01;34mgamin[0m                          [01;34mnewt[0m                 [01;34mw3m[0m
+[01;34mgconf[0m                          nsswitch.conf        wgetrc
+[01;34mgdb[0m                            [01;34mobex-data-server[0m     wodim.conf
+[01;34mgdm[0m                            [01;34mOpenCL[0m               [01;34mwpa_supplicant[0m
+[01;34mghostscript[0m                    [01;34mopenoffice[0m           [01;34mX11[0m
+[01;34mginn[0m                           [01;34mopt[0m                  [01;34mxdg[0m
+[01;34mgnome[0m                          os-release           [01;34mxml[0m
+[01;34mgnome-app-install[0m              pam.conf             [01;34mxul-ext[0m
+[01;34mgnome-settings-daemon[0m          [01;34mpam.d[0m                [01;34mxulrunner-1.9.2[0m
+[01;34mgnome-system-tools[0m             [01;34mpango[0m                zsh_command_not_found
+[01;34mgnome-vfs-2.0[0m                  papersize
+gnome-vfs-mime-magic           passwd
+]0;mc@Mc: /etcmc@Mc:/etc$ cd ..
+]0;mc@Mc: /mc@Mc:/$ ls
+[0m[01;34mbin[0m    [01;34mdev[0m   [01;36minitrd.img[0m      [01;34mlib64[0m       [01;34mmnt[0m   [01;34mroot[0m  [01;34mselinux[0m  [30;42mtmp[0m  [01;36mvmlinuz[0m
+[01;34mboot[0m   [01;34metc[0m   [01;36minitrd.img.old[0m  [01;34mlost+found[0m  [01;34mopt[0m   [01;34mrun[0m   [01;34msrv[0m      [01;34musr[0m  [01;36mvmlinuz.old[0m
+[01;34mcdrom[0m  [01;34mhome[0m  [01;34mlib[0m             [01;34mmedia[0m       [01;34mproc[0m  [01;34msbin[0m  [01;34msys[0m      [01;34mvar[0m
+]0;mc@Mc: /mc@Mc:/$ cd ~
+]0;mc@Mc: ~mc@Mc:~$ ls
+examples.desktop  Makefile.tpl  screenlog.1  [0m[01;34m公共的[0m  [01;34m图片[0m  [01;34m音乐[0m
+[01;34mGithub[0m            [01;34msat[0m           [01;34msoft[0m         [01;34m模板[0m    [01;34m文档[0m  [01;34m桌面[0m
+[01;34mGT-test[0m           screenlog.0   [01;34mUbuntu One[0m   [01;34m视频[0m    [01;34m下载[0m
+]0;mc@Mc: ~mc@Mc:~$ cd Github/
+]0;mc@Mc: ~/Githubmc@Mc:~/Github$ cd LPC1768_ChibiOS/
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ ls
+[0m[01;34mboards[0m  chconf.h  fw_load.gdb  main.c    main.o    mcuconf.h  readme.txt
+[01;34mbuild[0m   ch.elf    halconf.h    main.lst  Makefile  [01;34mos[0m         typescript
+]0;mc@Mc: ~/Github/LPC1768_ChibiOSmc@Mc:~/Github/LPC1768_ChibiOS$ cd [K[K[Kopenocd -f interface/jlink.cfg -f target/stm32.c fg 
+Open On-Chip Debugger 0.5.0 (2011-12-03-08:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.berlios.de/doc/doxygen/bugs.html
+Warn : Adapter driver 'jlink' did not declare which transports it allows; assuming legacy JTAG-only
+Info : only one transport option; autoselect 'jtag'
+DEPRECATED! use script 'target/stm32f1x.cfg' not 'target/stm32.cfg'
+1000 kHz
+adapter_nsrst_delay: 100
+jtag_ntrst_delay: 100
+cortex_m3 reset_config sysresetreq
+Info : J-Link initialization

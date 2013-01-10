@@ -66,23 +66,27 @@ int main(void) {
     halInit();
     chSysInit();
 
-    sdStart(&SD1, NULL);
-    chprintf(&SD1, "Build date " __DATE__ " " __TIME__ "\n");
+    sdStart(&SD3, NULL);
+    //chprintf(&SD1, "Build date " __DATE__ " " __TIME__ "\n");
 
-    chThdCreateStatic(led1_thread_wa, sizeof(led1_thread_wa),
-                      NORMALPRIO + 1, led1_thread, NULL);
-    chThdCreateStatic(led2_thread_wa, sizeof(led2_thread_wa),
-                      NORMALPRIO + 1, led2_thread, NULL);
+    // chThdCreateStatic(led1_thread_wa, sizeof(led1_thread_wa),
+    //                   NORMALPRIO + 1, led1_thread, NULL);
+    // chThdCreateStatic(led2_thread_wa, sizeof(led2_thread_wa),
+    //                   NORMALPRIO + 1, led2_thread, NULL);
 
     /*
      * Normal main() thread activity, nothing in this test.
      */
-    int cnt = 0;
+    //int cnt = 0;
     while (TRUE)
     {
-        chprintf(&SD1, "Count %d\n", cnt);
-        cnt++;
-        chThdSleepMilliseconds(1000);
+        sdWrite(&SD3, "0123456789\0", 11);
+        
+        palSetPort(GPIO2, 2);
+        chThdSleepSeconds(1);
+        palClearPort(GPIO2, 2);
+        chThdSleepSeconds(1);
+
     }
     return 0;
 }
