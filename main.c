@@ -66,7 +66,7 @@ int main(void) {
     halInit();
     chSysInit();
 
-    sdStart(&SD3, NULL);
+    sdStart(&SD1, NULL);
     //chprintf(&SD1, "Build date " __DATE__ " " __TIME__ "\n");
 
     // chThdCreateStatic(led1_thread_wa, sizeof(led1_thread_wa),
@@ -80,7 +80,7 @@ int main(void) {
     //int cnt = 0;
     while (TRUE)
     {
-        sdWrite(&SD3, "0123456789\0", 11);
+        sdWrite(&SD1, "0123456789\0", 11);
         
         palSetPort(GPIO2, 2);
         chThdSleepSeconds(1);

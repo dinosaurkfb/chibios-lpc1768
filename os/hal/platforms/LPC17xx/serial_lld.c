@@ -335,6 +335,7 @@ void sd_lld_init(void) {
   SD1.uart = LPC_UART0;
   /* RDX without resistors.       */
   /* TDX without resistors.       */
+  //modify PINSEL to change pin
   LPC_PINCON->PINSEL0 |= (1<<4) | (1<<6);
 #endif
 
@@ -343,6 +344,7 @@ void sd_lld_init(void) {
   SD2.uart = LPC_UART1;
   /* RDX without resistors.       */
   /* TDX without resistors.       */
+  //modify PINSEL to change pin
   LPC_PINCON->PINSEL0 |= (1<<30) ;
   LPC_PINCON->PINSEL1 |= (1<<0);
 #endif
@@ -352,7 +354,8 @@ void sd_lld_init(void) {
   SD3.uart = LPC_UART2;
   /* RDX without resistors.       */
   /* TDX without resistors.       */
-  LPC_PINCON->PINSEL0 |= (1<<20) | (1<<22);
+  //modify PINSEL to change pin
+  LPC_PINCON->PINSEL4 |= (1<<17) | (1<<19);
 #endif
   
 #if LPC17xx_SERIAL_USE_UART3
@@ -360,7 +363,8 @@ void sd_lld_init(void) {
   SD4.uart = LPC_UART3;
   /* RDX without resistors.       */
   /* TDX without resistors.       */
-  LPC_PINCON->PINSEL0 |= (1<<0) | (1<<2);
+  //modify PINSEL to change pin
+  LPC_PINCON->PINSEL0 |= (1<<1) | (1<<3);
 #endif
 }
 
@@ -506,7 +510,7 @@ void sd_lld_stop(SerialDriver *sdp) {
 #endif
 
 #if LPC17xx_SERIAL_USE_UART2
-    if (&SD2 == sdp) {
+    if (&SD3 == sdp) {
       // LPC_SC->PCLKSEL1 = (LPC_SC->PCLKSEL0 & ~(1<<16)) & (LPC17xx_SERIAL_UART0CLKDIV<<16);
       /*
       LPC_SYSCON->UARTCLKDIV = 0;
@@ -518,7 +522,7 @@ void sd_lld_stop(SerialDriver *sdp) {
 #endif
 
 #if LPC17xx_SERIAL_USE_UART3
-    if (&SD2 == sdp) {
+    if (&SD4 == sdp) {
       // LPC_SC->PCLKSEL1 = (LPC_SC->PCLKSEL0 & ~(1<<18)) & (LPC17xx_SERIAL_UART0CLKDIV<<18);
       /*
       LPC_SYSCON->UARTCLKDIV = 0;
