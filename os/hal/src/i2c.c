@@ -73,8 +73,8 @@ void i2cObjectInit(I2CDriver *i2cp) {
 
   i2cp->id_state  = I2C_STOP;
   i2cp->id_config = NULL;
-  i2cp->rxbuff_p = NULL;
-  i2cp->txbuff_p = NULL;
+  // i2cp->rxbuff_p = NULL;
+  // i2cp->txbuff_p = NULL;
   i2cp->rxbuf = NULL;
   i2cp->txbuf = NULL;
   i2cp->id_slave_config = NULL;
@@ -165,8 +165,8 @@ void i2cStop(I2CDriver *i2cp) {
  * @param[in] rxbytes     number of bytes to be received, set it to 0 if
  *                        you want transmit only
  */
-void i2cMasterTransmit(I2CDriver *i2cp,
-                      const I2CSlaveConfig *i2cscfg,
+void i2cMasterTransmitTimeout(I2CDriver *i2cp,
+                     const I2CSlaveConfig *i2cscfg,
                       uint16_t slave_addr,
                       uint8_t *txbuf,
                       size_t txbytes,
@@ -209,8 +209,8 @@ void i2cMasterTransmit(I2CDriver *i2cp,
  * @param[in] rxbytes     number of bytes to be received
  * @param[in] rxbuf       pointer to receive buffer
  */
-void i2cMasterReceive(I2CDriver *i2cp,
-                      const I2CSlaveConfig *i2cscfg,
+void i2cMasterReceiveTimeout(I2CDriver *i2cp,
+                     const I2CSlaveConfig *i2cscfg,
                       uint16_t slave_addr,
                       uint8_t *rxbuf,
                       size_t rxbytes){

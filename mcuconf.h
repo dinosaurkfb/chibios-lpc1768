@@ -89,3 +89,15 @@
 #define LPC17xx_SPI_SSP_ERROR_HOOK(spip)    chSysHalt()
 #define LPC17xx_SPI_SCK0_SELECTOR           SCK0_IS_PIO2_11
 
+/*
+ * IIC driver system settings.
+ */
+#define LPC17xx_I2C_USE_I2C0                FALSE
+#define LPC17xx_I2C_USE_I2C1                FALSE
+#define LPC17xx_I2C_USE_I2C2                FALSE
+
+#define LPC17xx_IIC0_IRQ_PRIORITY           3
+#define LPC17xx_IIC1_IRQ_PRIORITY           3
+#define LPC17xx_IIC2_IRQ_PRIORITY           3
+
+

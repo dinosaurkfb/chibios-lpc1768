@@ -34,9 +34,6 @@
 /*===========================================================================*/
 /* Driver constants.                                                         */
 /*===========================================================================*/
-/*===========================================================================*/
-/* Driver constants.                                                         */
-/*===========================================================================*/
 #define  I2CD_NO_ERROR                  0
 /** @brief Bus Error.*/
 #define  I2CD_BUS_ERROR                 0x01
@@ -60,7 +57,7 @@
  * @brief   Enables the mutual exclusion APIs on the I2C bus.
  */
 #if !defined(I2C_USE_MUTUAL_EXCLUSION) || defined(__DOXYGEN__)
-#define I2C_USE_MUTUAL_EXCLUSION    TRUE
+#define I2C_USE_MUTUAL_EXCLUSION        FALSE
 #endif
 
 /*===========================================================================*/
@@ -73,7 +70,6 @@
 /*===========================================================================*/
 /* Driver data structures and types.                                         */
 /*===========================================================================*/
-
 /**
  * @brief   Driver state machine possible states.
  */
@@ -92,69 +88,10 @@ typedef enum {
   I2C_SRECEIVE = 12,
 } i2cstate_t;
 
-
 #include "i2c_lld.h"
-
-/**
- * @brief   I2C notification callback type.
- * @details This callback invoked when byte transfer finish event occurs,
- *          No matter sending or reading.
- *
- * @param[in] i2cp      pointer to the @p I2CDriver object triggering the
- *                      callback
- * @param[in] i2cscfg   pointer to the @p I2CSlaveConfig object triggering the
- *                      callback
- */
-typedef void (*i2ccallback_t)(I2CDriver *i2cp, const I2CSlaveConfig *i2cscfg);
-
-
-/**
- * @brief   I2C error notification callback type.
- *
- * @param[in] i2cp      pointer to the @p I2CDriver object triggering the
- *                      callback
- * @param[in] i2cscfg   pointer to the @p I2CSlaveConfig object triggering the
- *                      callback
- */
-typedef void (*i2cerrorcallback_t)(I2CDriver *i2cp,
-                                   const I2CSlaveConfig *i2cscfg);
-
-
-/**
- * @brief I2C transmission data block size.
- */
-typedef uint8_t i2cblock_t;
-
-
-/**
- * @brief   Structure representing an I2C slave configuration.
- * @details Each slave device has its own config structure with input and
- *          output buffers for temporally storing data.
- */
-struct I2CSlaveConfig{
-  /**
-   * @brief Callback pointer.
-   * @note  Transfer finished callback. Invoke when all data transferred.
-   *        If set to @p NULL then the callback is disabled.
-   */
-  i2ccallback_t         id_callback;
-
-  /**
-   * @brief Callback pointer.
-   * @note  This callback will be invoked when error condition occur.
-   *        If set to @p NULL then the callback is disabled.
-   */
-  i2cerrorcallback_t    id_err_callback;
-#if defined(I2C_SLAVECONFIG_EXT_FIELDS)
-  I2C_SLAVECONFIG_EXT_FIELDS
-#endif
-};
-
-
 /*===========================================================================*/
 /* Driver macros.                                                            */
 /*===========================================================================*/
-
 #if I2C_USE_WAIT || defined(__DOXYGEN__)
 /**
  * @brief   Waits for operation completion.
@@ -245,6 +182,22 @@ struct I2CSlaveConfig{
     (i2cp)->id_state = I2C_READY;                                      \
   _i2c_wakeup_isr(i2cp);                                               \
 }
+/*===========================================================================*/
+/* External declarations.                                                    */
+/*===========================================================================*/
+/**
+ * @brief   Wrap i2cMasterTransmitTimeout function with TIME_INFINITE timeout.
+ * @api
+ */
+ #define i2cMasterTransmit(i2cp, i2cscfg, slave_addr, txbuf, txbytes, rxbuf, rxbytes)      \
+  (i2cMasterTransmitTimeout(i2cp, i2cscfg, slave_addr, txbuf, txbytes, rxbuf, rxbytes))
+
+/**
+ * @brief   Wrap i2cMasterReceiveTimeout function with TIME_INFINITE timeout.
+ * @api
+ */
+#define i2cMasterReceive(i2cp, i2cscfg, slave_addr, rxbuf, rxbytes)                        \
+  (i2cMasterReceiveTimeout(i2cp, i2cscfg, slave_addr, rxbuf, rxbytes))
 
 /*===========================================================================*/
 /* External declarations.                                                    */
@@ -256,12 +209,13 @@ extern "C" {
   void i2cObjectInit(I2CDriver *i2cp);
   void i2cStart(I2CDriver *i2cp, const I2CConfig *config);
   void i2cStop(I2CDriver *i2cp);
-  void i2cMasterTransmit(I2CDriver *i2cp, const I2CSlaveConfig *i2cscfg,
+  void i2cMasterTransmitTimeout(I2CDriver *i2cp, const I2CSlaveConfig *i2cscfg,
       uint16_t slave_addr,
       uint8_t *txbuf, size_t txbytes,
       uint8_t *rxbuf, size_t rxbytes);
-  void i2cMasterReceive(I2CDriver *i2cp, const I2CSlaveConfig *i2cscfg,
-      uint16_t slave_addr, uint8_t *rxbuf, size_t rxbytes);
+  void i2cMasterReceiveTimeout(I2CDriver *i2cp, const I2CSlaveConfig *i2cscfg,
+      uint16_t slave_addr, 
+      uint8_t *rxbuf, size_t rxbytes);
   void i2cMasterStart(I2CDriver *i2cp);
   void i2cMasterStop(I2CDriver *i2cp);
   void i2cAddFlagsI(I2CDriver *i2cp, i2cflags_t mask);

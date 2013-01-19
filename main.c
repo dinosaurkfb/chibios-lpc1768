@@ -23,7 +23,7 @@
 #include <ch.h>
 #include <hal.h>
 
-#include <chprintf.h>
+// #include <chprintf.h>
 
 
 static WORKING_AREA(led1_thread_wa, 128);
@@ -65,7 +65,7 @@ int main(void) {
      */
     halInit();
     chSysInit();
-
+    i2cStart(&I2CD1, NULL);
     sdStart(&SD1, NULL);
     //chprintf(&SD1, "Build date " __DATE__ " " __TIME__ "\n");
 
@@ -78,13 +78,18 @@ int main(void) {
      * Normal main() thread activity, nothing in this test.
      */
     //int cnt = 0;
+    uint8_t A[10] = "hello";
+    uint8_t B[10] = "0";
+
+    palClearPort(GPIO2, 2);//mie
     while (TRUE)
     {
-        sdWrite(&SD1, "0123456789\0", 11);
+        i2cMasterTransmit(&I2CD1, NULL, 0xA0, A, 5, B, 5);
+        sdWrite(&SD1, B, 11);
         
-        palSetPort(GPIO2, 2);
+        palSetPort(GPIO2, 2);//liang
         chThdSleepSeconds(1);
-        palClearPort(GPIO2, 2);
+        palClearPort(GPIO2, 2);//mie
         chThdSleepSeconds(1);
 
     }
